@@ -1,0 +1,318 @@
+#scrollTo{
+    position: fixed;
+    bottom: 70px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: #FF9100;
+    border-radius: 50%;
+    font-family: xx-large;
+    cursor: pointer;
+    color: #FFF;
+    outline: 0;
+    box-shadow: 2px 4px 16px rgba(0, 0, 0, 1);
+    z-index: 1;
+    opacity: 0;
+    transform: scale(0);
+    visibility: hidden;
+    transition: .2s;
+}
+
+#scrollTo.show{
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+}
+.about-us{
+    margin-top: 68px;
+    font-family: Lato;
+    position: relative;
+    width: 1440px;
+    padding: 0 95px;
+}
+#about-us-top{
+    display: flex;
+}
+.about-us-left{
+    padding-top: 116px;
+}
+.about-us-left h1 {
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    width: 347px;
+    height: 72px;
+    color: #001527;
+}
+.about-us-left p{
+    line-height: 34px;
+    font-size: 22px;
+    color: #757575;
+    margin-top: 45px;
+    margin-bottom: 61px;
+    font-style: normal;
+    font-weight: normal;
+    width: 468px;
+    height: 111px;
+}
+.about-us-left button{
+    background: #FF9100;
+    border-radius: 44px;
+    color: #FFF;
+    border: none;
+    width: 240px;
+    height: 54px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: 0;
+}
+.about-us-right{
+    position: absolute;
+    width: 798px;
+    height: 590px;
+    left: 563px;
+    top: 0;
+}
+
+/* about-helping */
+#about-helping{
+    margin-top: 313px;
+    display: flex;
+}
+.about-helping-left img{
+    width: 706px !important;
+    height: 423px !important;
+    margin-left: -37px;
+}
+.about-helping-right{
+    padding-top: 50px;
+    position: absolute;
+    left: 802px;
+}
+.about-helping-right h2 {
+    font-size: 32px;
+    width: 490px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    height: 77px;
+    color: #001527;
+}
+.about-helping-right p{
+    line-height: 37px;
+    font-size: 22px;
+    font-style: normal;
+    width: 543px;
+    height: 222px;
+    font-weight: normal;
+    color: #757575;
+    margin-top: 32px;
+}
+
+/* our-values */
+#our-values{
+    margin-top: 242px;
+}
+#our-values h2{
+    font-size: 32px;
+    width: 793px;
+    height: 77px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    color: #04B7FF;
+    margin: auto;
+}
+.content-values{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 229px;
+
+}
+.item-content{
+    flex: 0 0 50%;
+    box-sizing: border-box;
+    display: -webkit-inline-box;
+}
+.item-content .icon-img{
+    padding-top: 7px;
+}
+.item-content .item-icon{
+    margin-left: 21px;
+}
+.item-content .item-icon span{
+    font-size: 32px;
+    color: #001527;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    margin-bottom: 25px;
+}
+.item-content .item-icon p {
+    line-height: 37px;
+    font-size: 22px;
+    color: #757575;
+    margin-top: 25px;
+    margin-bottom: 44px;
+    font-style: normal;
+    font-weight: normal;
+}
+.item-content:first-child .item-icon span{
+    width: 121px;
+    height: 39px;
+}
+.item-content:first-child .item-icon p{
+    width: 494px !important;
+    height: 148px !important;
+}
+.item-content:nth-child(2) .item-icon span{
+    width: 142px;
+    height: 39px;
+}
+.item-content:nth-child(2) .item-icon p{
+    width: 523px !important;
+    height: 185px !important;
+}
+.item-content:nth-child(3) .item-icon span{
+    width: 169px;
+    height: 39px;
+}
+.item-content:nth-child(3) .item-icon p{
+    width: 494px !important;
+    height: 148px !important;
+}
+.item-content:nth-child(4) .item-icon span{
+    width: 165px;
+    height: 39px;
+}
+.item-content:nth-child(4) .item-icon p{
+    width: 494px !important;
+    height: 144px !important;
+}
+.item-content:nth-child(5) .item-icon span{
+    width: 126px;
+    height: 39px;
+}
+.item-content:nth-child(5) .item-icon p{
+    width: 494px !important;
+    height: 74px !important;
+}
+
+/* first-product */
+#first-product{
+    margin-top: 121px;
+    display: flex;
+}
+.first-product-left{
+    padding-top: 160px;
+}
+.first-product-left h2{
+    font-size: 32px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    color: #001527;
+    width: 242px;
+    height: 39px;
+}
+.first-product-left p{
+    line-height: 34px;
+    font-size: 22px;
+    color: #757575;
+    margin-bottom: 54px;
+    margin-top: 32px;
+    width: 409px;
+    height: 148px;
+    font-style: normal;
+    font-weight: normal;
+}
+.first-product-left .learn-more{
+    position: relative;
+}
+.first-product-left .learn-more a{
+    font-size: 22px;
+    color: #FF9100;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    width: 262px;
+    height: 27px;
+}
+.first-product-left .learn-more a img{
+    position: absolute;
+    top: 2px;
+    left: 278px
+}
+.first-product-right{
+    position: absolute;
+    width: 798px;
+    height: 608px;
+    left: 609px;
+    z-index: 0;
+}
+
+/* about-us-bot */
+#about-us-bot{
+    margin-top: 351px;
+    margin-bottom: 213px;
+    display: flex;
+}
+#about-us-bot h2{
+    color: #000;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    width: 303px;
+    height: 39px;
+}
+#about-us-bot p{
+    line-height: 37px;
+    font-size: 22px;
+    color: #757575;
+    opacity: 0.6;
+    margin-top: 32px;
+    margin-bottom: 42px;
+    font-style: normal;
+    font-weight: normal;
+    width: 524px;
+    height: 74px;
+}
+#about-us-bot button{
+    border: 3px solid #FF9100;
+    box-sizing: border-box;
+    border-radius: 44px;
+    color: #FFF;
+    background: #FF9100;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    cursor: pointer;
+    text-align: center;
+    height: 54px;
+    width: 240px;
+    outline: 0;
+}
+#about-us-bot .better-right{
+    position: absolute;
+    left: 821px;
+}
+#about-us-bot .better-right button{
+    background: unset;
+    color: #001527;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    cursor: pointer;
+    text-align: center;
+    height: 54px;
+    width: 240px;
+}

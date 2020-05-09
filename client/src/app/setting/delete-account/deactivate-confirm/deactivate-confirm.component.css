@@ -1,0 +1,43 @@
+.content-activate-confirm{
+    width: 1440px;
+    background: #F8F8F8;
+}
+.img-check img{
+    width: 56px;
+    height: 56px;
+    margin-top: 221px;
+    margin-bottom: 32px;
+}
+.content-activate-confirm p{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 32px;
+    color: #000;
+    width: 582px;
+    height: 77px;
+    margin: auto;
+    margin-bottom: 62px
+}
+.backSetting{
+    padding-bottom: 239px;
+    position: relative;
+}
+.content-activate-confirm .backSetting a img{
+    width: 8px;
+    height: 14px;
+    position: absolute;
+    top: 7px;
+}
+.content-activate-confirm .backSetting a:last-child{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 22px;
+    width: 156px;
+    height: 27px;
+    color: #FF9100;
+    margin-left: 16px;
+}

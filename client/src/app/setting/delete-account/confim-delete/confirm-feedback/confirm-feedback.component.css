@@ -1,0 +1,25 @@
+.confirm-feedback{
+    width: 1440px;
+    background: #F8F8F8;
+    padding-top: 268px;
+    padding-bottom: 282px;
+}
+.img-check img{
+    width: 56px;
+    height: 56px;
+    margin: auto;
+}
+.text-content{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 32px;
+    width: 582px;
+    height: 77px;
+    margin: auto;
+    margin-top: 32px;
+}
+.text-content p{
+    margin-bottom: 0;
+}

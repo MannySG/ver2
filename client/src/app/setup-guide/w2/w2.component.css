@@ -1,0 +1,215 @@
+/*========Header==========*/
+header{
+    display: flex;
+}
+header img{
+    margin: 32px 0 29px 44px;
+}
+header h5{
+    width: 141px;
+    height: 35px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 34px;
+    font-size: 22px;
+    text-align: center;
+    color: #001527; 
+    margin: 33px 0 22px 578px;
+    white-space: nowrap;
+}
+header a.save{
+    margin: 36px 55px 34px 490px;
+    width: 104px;
+    height: 22px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 18px;
+    text-align: right;
+    color: #757575;
+    white-space: nowrap;
+}
+
+/*========Content==========*/
+.step-line {
+    height: 5px;
+    background: #E0E0E0;
+    position: relative;
+    width: 1440px;
+}
+.step-line-2{
+    height: 5px;
+    position: absolute;
+    -webkit-animation-name: line;  
+    -webkit-animation-duration: 5s;   
+    -webkit-animation-fill-mode: forwards; 
+    animation-name: line;
+    animation-duration: 5s;  
+    animation-fill-mode: forwards;
+    background-color: orange;
+}
+@keyframes line {
+    from {width: 360px;}
+    to {width: 540px; }
+}
+#w2{
+    margin-top: 123px; 
+    font-family: Lato;
+    width: 1440px;
+}
+#w2 h4{
+    width: 611px;
+    height: 77px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 32px;
+    text-align: center;  
+    color: #001527;
+    margin: 0 414px 27px 415px;
+}
+#w2 p.title{
+    width: 490px;
+    height: 74px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 37px;
+    font-size: 22px;
+    text-align: center;
+    color: #757575;
+    margin: 0 475px;
+    margin-bottom: 21px;
+}
+.chooseTaxe{
+    display: flex;
+    margin-left: 639px;
+    margin-bottom: 27px;
+}
+.chooseTaxe .chooseToggle:first-child{
+    margin-right: 31px;
+}
+.chooseTaxe .chooseToggle{
+    display: flex;
+}
+.chooseToggle .checked{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid #E0E0E0;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-right: 7px;
+    
+}
+.chooseToggle .check{
+    background: #FF9100;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.chooseToggle .item-check{
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+#w2 button.icon-left {
+    top: 426px;
+    left: 132px;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background: #E0E0E0;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+}
+#w2 button.icon-left:focus {
+    outline: none;
+}
+#w2 button.icon-left i{
+    width: 8px;
+    height: 14px;
+}
+#w2 p.content{
+    margin: 27px 465px;
+    width: 510px;
+    height: 37px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 37px;
+    font-size: 22px;
+    text-align: center;
+    color: #757575;
+}
+#w2 input[type=text]{
+    width: 312px;
+    height: 62px;
+    border: 2px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 18px 24px 20px 24px;
+    margin: 0 564px 63px 564px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 20px;
+    color: #BDBDBD;
+}
+#w2 input[type=text]:focus{
+    border: 2px solid #FF9100;
+    outline: none;
+}
+#w2 .enter-continue{
+    display: flex;
+    margin: 0 637px 283px 642px ;
+}
+#w2 .enter-continue p.continue{
+    width: 75px;
+    height: 22px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 0;
+}
+#w2 .enter-continue p.enter{
+    width: 92px;
+    height: 22px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 18px;
+    color: #BDBDBD;
+}
+#w2 .enter-continue button.icon-right{
+    width: 48px;
+    height: 48px;
+    background: #FF9100;
+    border-radius: 50%;
+    border: none;
+    margin-left: 21px;
+    cursor: pointer;
+    color: #fff;
+}
+#w2 .enter-continue button.icon-right:focus{
+    outline: none;
+}
+#w2.enter-continue button.icon-right i{
+    width: 8px;
+    height: 14px;
+}
+  

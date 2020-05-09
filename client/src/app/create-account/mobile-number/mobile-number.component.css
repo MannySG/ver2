@@ -1,0 +1,154 @@
+
+
+/* main */
+.main-content{
+    padding-top: 133px;
+    padding-bottom: 165px;
+    font-family: Lato;
+    background: #F8F8F8;
+    width: 1440px;
+}
+.app-body .card-group{
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.12);
+    height: 450px;
+    border-radius: 12px;
+}
+
+.img-login{
+    position: relative;
+}
+.img-login .text-content{
+    position: absolute;
+    top: 60px;
+    left: 86px;
+}
+.img-login .text-content h2{
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 32px;
+    color: #FFF;
+}
+.img-login .text-content span{
+    font-style: normal;
+    font-weight: normal;
+    line-height: 34px;
+    font-size: 22px;
+    color: #FFF;
+    width: 177px;
+    height: 77px;
+}
+
+h1{
+    margin-top: 23px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 22px;
+    color: #001527;
+    margin-bottom: 27px;
+    width: 200px;
+    height: 27px;
+}
+
+.input-group{
+    width: 344px;
+    margin-bottom: 16px;
+}
+.input-group input[type="text"]{
+    border: 2px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 12px;
+    height: 62px;
+    background: unset !important;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 20px;
+    color: #001527;
+    padding-left: 26px;
+}
+
+input::placeholder{
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 18px;
+    color: #BDBDBD;
+}
+.input-group>.form-control:focus {
+    border: 2px solid #FF9100;
+    box-sizing: border-box;
+    box-shadow: none;
+}
+form button{
+    background: #FF9100;
+    border-radius: 44px;
+    width: 344px;
+    height: 62px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 20px;
+    text-align: center;
+    color: #FFF;
+    border: none;
+    margin-bottom: 23px;
+    cursor: pointer;
+    outline: 0;
+}
+form .text-bot{
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    color: #757575;
+    width: 187px !important;
+    height: 20px !important;
+    margin: auto;
+}
+form .text-bot span a{
+    color: #757575;
+    text-decoration: underline;
+}
+.content-right .mobile-number{
+    border: none;
+    height: 450px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.mobile-number form h1{
+    margin-bottom: 26px;
+}
+.mobile-number form p{
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 22px;
+    color: #001527;
+    width: 344px;
+    height: 53px;
+    margin-bottom: 26px
+}
+
+.error-loading{
+    background: #F65555;
+    opacity: 0.2;
+    width: 344px;
+    height: 62px;
+    position: absolute;
+    left: 548px;
+    top: 705px;
+}
+.error-loading .text-err{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 37px;
+    font-size: 22px;
+    color: #000;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    transform: translate(0,32%);
+}

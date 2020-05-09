@@ -1,0 +1,64 @@
+<div class="main-content">
+  <div class="app-body">
+    <main class="main d-flex align-items-center">
+      <div class="content-main" style="margin: auto">
+        <div style="width: 904px !important;">
+          <div class="card-group">
+            <div class="content-signin" style="width:50%">
+              <div class="img-login" *ngIf="!showloading">
+                <img [src]="imgLogin" class="img-fluid">
+                <div class="text-content text-center">
+                  <h2>Welcome to Better</h2>
+                  <span>Taxes made simple</span>
+                </div>
+              </div>
+              <div class="card p-4 content" *ngIf="showloading" style="border: none;">
+                <div class="card-body" style="margin: auto;">
+                  <form>
+                    <h1>Sign in</h1>
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Email address" autocomplete="off" required>
+                    </div>
+                    <div class="input-group">
+                      <input type="password" class="form-control" [(ngModel)]="textpass" name="pass"
+                        placeholder="Password" autocomplete="off" required>
+                      <div class="img-Eye" *ngIf="textpass.length == 0 ? showEye : !showEye">
+                        <img [src]="imgEye">
+                      </div>
+                    </div>
+                    <button type="button">Sign into your account</button>
+                    <div class="text-bot">
+                      <span>Already a member? <a href="#">Sign in.</a></span>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="content-right" style="width:50%">
+              <div class="card p-4 mobile-number" style="border: none">
+                <div class="card-body" style="margin: auto;">
+                  <form>
+                    <h1>Create your account</h1>
+                    <p>{{content}}</p>
+                    <div class="input-group">
+                      <input type="text" class="form-control" [value]="phoneNumber" placeholder="Mobile number"
+                        autocomplete="off" id="phoneNull" (key.enter)="mobileNumber.value" #mobileNumber>
+                    </div>
+                    <button type="button" (click)="ConfirmCode(mobileNumber.value)">Send confimation code</button>
+                    <div class="text-bot">
+                      <span>Already a member? <a style="cursor: pointer;">Sign in.</a></span>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<div class="error-loading" *ngIf="showErr">
+  <div class="text-err">{{error}}</div>
+</div>

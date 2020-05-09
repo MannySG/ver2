@@ -1,0 +1,127 @@
+.content-notification{
+    padding-left: 182px;
+    background: #F8F8F8;
+    padding-top: 95px;
+    width: 1440px;
+    position: relative;
+    padding-bottom: 99px;
+    display: flex;
+}
+.item-menu{
+    width: 237px;
+    border-right: 1.5px solid #E0E0E0;
+    font-family: SF Pro Text, sans-serif;
+    height: 520px;
+}
+.nav a{
+    cursor: pointer;
+}
+.nav .nav-link:nth-child(6) span{
+    color: #001527;
+}
+.nav .nav-link span{
+    line-height: normal;
+    font-size: 16px;
+    color: #757575;
+    height: 20px !important;
+}
+.item-content-right{
+    margin-left: 154px;
+    font-family: Lato;
+}
+.item-content-right h2{
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 32px;
+    color: #000000;
+    width: 374px;
+    height: 39px;
+    margin-bottom: 27px;
+}
+.referral span{
+    font-style: normal;
+    font-weight: normal;
+    line-height: 37px;
+    font-size: 22px;
+    color: #001527;
+}
+.referral{
+    display: flex;
+    position: relative;
+    margin-bottom: 22px;
+}
+.referral .switch{
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: 30px;
+}
+.referral .switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.referral .switch .slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.referral .switch  .slider:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 0;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+.referral .switch input:checked + .slider {
+    background-color: #FF9100;
+}
+  
+.referral .switch input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+.referral .switch input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+.referral .switch  .round {
+    border-radius: 34px;
+}
+.referral .switch .round:before {
+    border-radius: 50%;
+}
+.bottom-notifications{
+    border: 1.5px solid #E0E0E0;
+    width: 679px;
+    margin-top: 27px;
+    margin-bottom: 33px;
+}
+.referral .text-label{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+}
+.referral .text-label p{
+    line-height: 37px;
+    font-size: 22px;
+    color: #001527;
+    margin-bottom: 0;
+}
+.referral .text-label span{
+    line-height: 37px;
+    font-size: 22px;
+    color: #757575;
+}

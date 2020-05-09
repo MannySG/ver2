@@ -1,0 +1,26 @@
+<!----------Header----------->
+<header>
+    <a [routerLink]="['/setup-guide']">
+        <img src="assets/images/setup-guide/logo.png" alt="">
+    </a> 
+    <h5>Account Setup</h5>
+    <a href="" class="save">Save and Exit</a>
+</header>
+  
+<!--------Content-------->
+<div class="step-line">
+    <div class="step-line-2"></div>
+</div>
+<div id="log-in">
+    <div class="group-input">
+        <h4>Wells fargo</h4>
+        <button class="icon-left" (click)="Manual()">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <input type="text" placeholder="Username"><i class="fas fa-lock"></i>
+        <br>
+        <input type="text" placeholder="Password"><i class="fas fa-exclamation-circle"></i>
+    </div>
+    <button class="submit" (click)="Complete()"><span>Submit</span></button>
+    
+</div>

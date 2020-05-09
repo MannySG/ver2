@@ -1,0 +1,54 @@
+<footer>
+  <div class="footer">
+    <div class="row" style="margin: 0">
+      <div id="footer-Left" class="col-8" style="padding-left: 0;">
+        <div id="logoF">
+          <a href="home">
+            <img [src]="imgF">
+          </a>
+        </div>
+        <div class="content">{{content}}</div>
+        <div class="social">
+          <a href="#">Facebook </a> <span class="coment"> / </span>
+          <a href="#">Instagram </a> <span class="coment"> / </span>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+      <div id="navgation" class="col-2">
+        <h3>Navigation</h3>
+        <ul class="menu">
+          <li class="item-menu">
+            <a [routerLink]="['/about-us']">About Us</a>
+          </li>
+          <li class="item-menu">
+            <a [routerLink]="['/why-better']">Why Better?</a>
+          </li>
+          <li class="item-menu">
+            <a href="#">Safehold</a>
+          </li>
+          <li class="item-menu">
+            <a [routerLink]="['/contact']">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div id="imformation" class="col-2">
+        <h3>Information</h3>
+        <ul class="menu">
+            <li class="item-menu">
+              <a href="#">Help</a>
+            </li>
+            <li class="item-menu">
+              <a href="#">Terms & Conditions</a>
+            </li>
+            <li class="item-menu">
+              <a href="#">Privacy</a>
+            </li>
+            <li class="item-menu">
+              <a href="#">Report an Issue</a>
+            </li>
+          </ul>
+      </div>
+    </div>
+
+  </div>
+</footer>

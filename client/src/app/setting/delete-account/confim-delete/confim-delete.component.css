@@ -1,0 +1,84 @@
+.content-confirm-delete{
+    width: 1440px;
+    background: #F8F8F8;
+    font-family: Lato;
+    padding-top: 104px;
+}
+.content-confirm-delete h2{
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 32px;
+    width: 418px;
+    height: 39px;
+    color: #001527;
+    margin: auto;
+    margin-bottom: 13px;
+}
+.content-confirm-delete p{
+    font-style: normal;
+    font-weight: normal;
+    line-height: 37px;
+    font-size: 22px;
+    width: 680px;
+    height: 74px;
+    margin: auto;
+    color: #001527;
+    margin-bottom: 5px;
+}
+.content-confirm-delete form{
+    padding-bottom: 132px;
+}
+.content-confirm-delete form .form-group textarea{
+    width: 680px;
+    height: 265px;
+    padding-top: 29px;
+    padding-left: 32px;
+    margin: auto;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 37px;
+    font-size: 22px;
+    color: #BDBDBD;
+    border-radius: 12px;
+
+}
+.form-group>.form-control:focus{
+    border: 2px solid #FF9100;
+    box-sizing: border-box;
+    border-radius: 12px;
+    box-shadow: none;
+}
+.content-confirm-delete form .form-group textarea::placeholder{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 37px;
+    font-size: 22px;
+    color: #BDBDBD;
+}
+form .btn-feedback button{
+    width: 240px;
+    height: 54px;
+    cursor: pointer;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    border-radius: 44px;
+    border: none;
+    font-size: 20px;
+    outline: 0;
+}
+ form .btn-feedback button:first-child{
+    background: #FF9100;
+    color: #FFF;
+    margin-right: 49px;
+}
+form .btn-feedback button:last-child{
+    background: unset;
+    color: #757575;
+    border: 3px solid #E0E0E0;
+    box-sizing: border-box;
+}

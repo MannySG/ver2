@@ -1,0 +1,196 @@
+/*========Header==========*/
+header{
+    display: flex;
+}
+header img{
+    margin: 32px 0 29px 44px;
+}
+header h5{
+    width: 141px;
+    height: 35px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 34px;
+    font-size: 22px;
+    text-align: center;
+    color: #001527; 
+    margin: 33px 0 22px 578px;
+    white-space: nowrap;
+}
+header a.save{
+    margin: 36px 55px 34px 490px;
+    width: 104px;
+    height: 22px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 18px;
+    text-align: right;
+    color: #757575;
+    white-space: nowrap;
+}
+
+/*==========Content========*/
+.step-line {
+    height: 5px;
+    background: #E0E0E0;
+    position: relative;
+    width: 1440px;
+}
+.step-line-2{
+    height: 5px;
+    position: absolute;
+    -webkit-animation-name: line;  
+    -webkit-animation-duration: 5s;   
+    -webkit-animation-fill-mode: forwards; 
+    animation-name: line;
+    animation-duration: 5s;  
+    animation-fill-mode: forwards;
+    background-color: #FF9100;
+}
+@keyframes line {
+    0% {width: 720px;}
+    100% {width: 900px; }
+}
+#d-outcome {
+    margin-top: 79px;
+    font-family: Lato;
+    width: 1440px;
+}
+#d-outcome h4{
+    width: 611px;
+    height: 39px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 32px;
+    text-align: center;
+    color: #001527;
+    margin: 0 414px 47px 415px;
+}
+#d-outcome button.icon-left {
+    top: 426px;
+    left: 132px;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background: #E0E0E0;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+}
+#d-outcome button.icon-left {
+    outline: none;
+}
+#d-outcome button.icon-left i{
+    width: 8px;
+    height: 14px;
+}
+#d-outcome .group-plan{
+    display: flex;
+    margin: 0 209px;
+}
+#d-outcome .group-plan h5{
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 32px;
+    text-align: center;
+    color: #001527;
+}
+#d-outcome .group-plan p{
+    font-style: normal;
+    font-weight: normal;
+    line-height: 31px;
+    font-size: 20px;
+    text-align: center;
+    color: #757575;
+}
+#d-outcome .group-plan button{
+    width: 240px;
+    height: 54px;
+    background: #FF9100;
+    border-radius: 44px;
+    color: #fff;
+    border: none;
+}
+#d-outcome .group-plan button:focus{
+    outline: none;
+}
+#d-outcome .group-plan button span{
+    width: 140px;
+    height: 24px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 14px 51px 16px 49px;
+    white-space: nowrap;
+}
+#d-outcome .group-plan .item-1,#d-outcome .group-plan .item-2,#d-outcome .group-plan .item-3{
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    width: 325px;
+    height: 498px;
+}
+#d-outcome .group-plan .item-1{
+    margin-right: 21px;
+}
+#d-outcome .group-plan .item-2{
+    margin-right: 26px;
+}
+#d-outcome .group-plan .item-1 img{
+    width: 176.96px;
+    height: 155.22px;
+    margin: 33px 74px 16px 74px;
+}
+#d-outcome .group-plan .item-2 img{
+    width: 132.96px;
+    height: 139.92px;
+    margin: 41px 96px 23px 96px;
+}
+#d-outcome .group-plan .item-3 img{
+    width: 73px;
+    height: 78px;
+    margin: 72px 126px 54px 126px;
+}
+#d-outcome .group-plan .item-1 p{
+    margin: 0 34px 24px 35px;
+    width: 256px;
+    height: 125px;
+}
+#d-outcome .group-plan .item-2 p{
+    margin: 0 27px 24px 28px;
+    width: 270px;
+    height: 125px;
+}
+#d-outcome .group-plan .item-3 p{
+    margin: 0 29px 24px 28px;
+    width: 268px;
+    height: 125px;
+}
+#d-outcome .group-plan .item-1 button,#d-outcome .group-plan .item-3 button{
+    margin: 0 55px 39px 30px;
+    cursor: pointer;
+}
+#d-outcome .group-plan .item-2 button{
+    margin: 0 53px 39px 32px;
+    cursor: pointer;
+}
+#d-outcome a{
+    width: 408px;
+    height: 37px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 37px;
+    font-size: 22px;
+    text-align: center;
+    color: #BDBDBD;
+    margin: 38px 516px 66px 516px;
+    display: block;
+}

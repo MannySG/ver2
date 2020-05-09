@@ -1,0 +1,14 @@
+<div style="background: #F2F2F2; height: 2px; width: 1440px;"></div>
+<div class="content-confirm-delete text-center">
+  <h2>We're sorry to see you go.</h2>
+  <p>{{content}}</p>
+  <form>
+    <div class="form-group">
+      <textarea class="form-control" placeholder="{{placeHolder}}"></textarea>
+    </div>
+    <div class="btn-feedback">
+      <button type="button" [routerLink]="['/dashboard/confirm-feedback']">Submit</button>
+      <button type="button" [routerLink]="['/signup/signin']">Skip feedback</button>
+    </div>
+  </form>
+</div>

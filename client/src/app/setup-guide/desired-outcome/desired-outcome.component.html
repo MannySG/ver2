@@ -1,0 +1,49 @@
+<!----------Header----------->
+<header>
+  <a [routerLink]="['/setup-guide']">
+      <img src="assets/images/setup-guide/logo.png" alt="">
+  </a> 
+  <h5>Account Setup</h5>
+  <a href="" class="save">Save and Exit</a>
+</header>
+
+<!--------Content-------->
+<div class="step-line">
+  <div class="step-line-2"></div>
+</div>
+
+<div id="d-outcome">
+    <h4>What is your desired outcome?</h4>
+    <button class="icon-left" (click)="Marial()">
+        <i class="fas fa-chevron-left"></i>
+    </button>
+    <div class="group-plan">
+        <div class="item-1">
+            <img src="assets/images/setup-guide/plan-1.png" alt="">
+            <h5>Refund</h5>
+            <p>Better transfers enough money to cover taxes and a little extra to ensure a refund at the end of the year.</p>
+            <button>
+                <span>Select This Plan</span>
+            </button>
+        </div>
+        <div class="item-2">
+            <img src="assets/images/setup-guide/plan-2.png" alt="">
+            <h5>Breakeven</h5>
+            <p>Better transfers just enough money to Safehold to cover taxes. You won't get a large refund, but you won't owe.</p>
+            <button>
+                <span>Select This Plan</span>
+            </button>
+        </div>
+        <div class="item-3">
+            <img src="assets/images/setup-guide/plan-3.png" alt="">
+            <h5>Owe</h5>
+            <p>Better transfers enough money so you won’t incur penalties. However, you’ll still owe some for taxes.</p>
+            <button>
+                <span>Select This Plan</span>
+            </button>
+        </div>
+    </div>
+    <a routerLink="/setup-guide/integrate-bank">You will be able to change this at any time.</a>
+</div>
+
+

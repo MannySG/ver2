@@ -1,0 +1,29 @@
+<div class="header">
+    <div class="row">
+        <div id="logo" class="col-lg-4">
+            <a href="home">
+                <img [src]="imgLg">
+            </a>
+        </div>
+        <div id="menu" class="col-lg-8">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <button class="nav-link" [routerLink]="['/about-us']"
+                        routerLinkActive="router-link-active"><span>About Us</span></button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" [routerLink]="['/why-better']"
+                        routerLinkActive="router-link-active"><span>Why Better?</span></button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" [routerLink]="['/contact']"
+                        routerLinkActive="router-link-active"><span>Contact</span></button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link " [routerLink]="['/signup/signin']" routerLinkActive="router-link-active"><span>Log
+                            in</span></button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

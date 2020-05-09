@@ -1,0 +1,43 @@
+<div style="background: #F2F2F2; height: 2px; width: 1440px;"></div>
+<div class="content-profile">
+    <div class="item-menu">
+        <nav class="nav flex-column">
+            <a class="nav-link" [routerLink]="['/dashboard/profile']"><span>Profile</span></a>
+            <a class="nav-link" [routerLink]="['/dashboard/email']"><span>Email</span></a>
+            <a class="nav-link" [routerLink]="['/dashboard/password']"><span>Password</span></a>
+            <a class="nav-link" [routerLink]="['/dashboard/bank-account']"><span>Bank Account</span></a>
+            <a class="nav-link" [routerLink]="['/dashboard/tax-information']"><span>Tax Information</span></a>
+            <a class="nav-link" [routerLink]="['/dashboard/notifications']"><span>Notifications</span></a>
+            <a class="nav-link" [routerLink]="['/dashboard/help-support']"><span>Help & Support</span></a>
+            <a class="nav-link active"><span>Contact Us</span></a>
+            <a class="nav-link"><span>Report an Issue</span></a>
+            <a class="nav-link" [routerLink]="['/dashboard/payments-report']"><span>Reports of Payments</span></a>
+            <a class="nav-link" [routerLink]="['/dashboard/privacy-policy']"><span>Privacy Policy</span></a>
+            <a class="nav-link" [routerLink]="['/dashboard/terms-conditions']"><span>Terms & Conditions</span></a>
+            <a class="nav-link" [routerLink]="['/dashboard/delete-account']"><span>Delete Your Account</span></a>
+        </nav>
+    </div>
+
+    <div class="item-content-right">
+        <h2>Get in touch</h2>
+        <form class="ng-valid" #formContact="ngForm">
+            <div class="form-group"   >
+                <label>Name</label>
+                <input class="form-control" type="text" ngModel name="name" required>
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input class="form-control" type="text" ngModel name="email" required>
+            </div>
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input class="form-control"  type="text" ngModel name="phone">
+            </div>
+            <div class="form-group">
+                <label>Message</label>
+                <textarea class="form-control" type="text" ngModel name="message" ></textarea>
+            </div>
+            <button (click)="Confirm()" [disabled]="formContact.invalid"><span>Save Changes</span></button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,49 @@
+<!----------Header----------->
+<header>
+  <a [routerLink]="['/setup-guide']">
+    <img src="assets/images/setup-guide/logo.png" alt="">
+  </a>
+  <h5>Account Setup</h5>
+  <a href="" class="save">Save and Exit</a>
+</header>
+
+<!----------Content----------->
+<div class="step-line">
+  <div class="step-line-2"></div>
+</div>
+<div id="w2">
+  <h4>Do you have a W-2 employee job where taxes are automatically taken out?</h4>
+  <p class="title">We can factor this into our calculations and helps us accurately calculate your withholdings.</p>
+  <div class="chooseTaxe">
+    <div class="chooseToggle">
+      <div class="checked" *ngIf="!checked" (click)="ShowChecked()"></div>
+      <div class="check" *ngIf="checked" (click)="ShowChecked()">
+        <div class="item-check"></div>
+      </div>
+      <span>Yes</span>
+    </div>
+    <div class="chooseToggle">
+      <div class="checked" *ngIf="checked" (click)="ShowChecked()"></div>
+      <div class="check" *ngIf="!checked" (click)="ShowChecked()">
+        <div class="item-check"></div>
+      </div>
+      <span>No</span>
+    </div>
+  </div>
+  <div *ngIf="checked">
+    <p class="content">On average, how much does this job pay per month?</p>
+    <input type="text" [value]="value">
+  </div>
+  <button class="icon-left" (click)="Method()">
+    <i class="fas fa-chevron-left"></i>
+  </button>
+  <div class="enter-continue">
+    <div class="text-left">
+      <p class="continue">Continue</p>
+      <p class="enter">Press Enter</p>
+    </div>
+    <button class="icon-right" (click)="Marial()">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+</div>

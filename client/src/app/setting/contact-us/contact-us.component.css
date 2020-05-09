@@ -1,0 +1,98 @@
+.content-profile{
+    padding-left: 182px;
+    background: #F8F8F8;
+    padding-top: 95px;
+    width: 1440px;
+    position: relative;
+    padding-bottom: 99px;
+    display: flex;
+}
+.item-menu{
+    width: 237px;
+    border-right: 1.5px solid #E0E0E0;
+    font-family: SF Pro Text, sans-serif;
+    height: 520px;
+}
+.nav a{
+    cursor: pointer;
+}
+.nav .nav-link span{
+    line-height: normal;
+    font-size: 16px;
+    color: #757575;
+    height: 20px !important;
+}
+.nav .active span{
+    color: #001527;
+}
+.item-content-right{
+    margin-left: 154px;
+    width: 684px;
+}
+.item-content-right h2{
+    width: 175px;
+    height: 39px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 32px;
+    color: #000000;
+    margin-bottom: 38px;
+}
+.item-content-right .form-group>.form-control:focus{
+    border: 2px solid #FF9100;
+    box-sizing: border-box;
+    border-radius: 12px;
+    box-shadow: none;
+}
+.item-content-right .form-group{
+    margin-bottom: 32px;
+}
+.item-content-right .form-group label{
+    font-family: 'SF Pro Text, sans-serif';
+    line-height: normal;
+    font-size: 14px;
+    color: #757575;
+    width: 577px;
+    height: 17px;
+    margin-bottom: 12px;
+}
+.item-content-right .form-group input{
+    width: 680px;
+    height: 62px ;
+    border: 2px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+.item-content-right .form-group textarea{
+    width: 680px;
+    height: 265px;
+    resize: none;
+    border: 2px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+.item-content-right button{
+    background: #FF9100;
+    border-radius: 44px;
+    width: 240px;
+    height: 54px;
+    border: none;
+    padding: 14px 59px 16px 58px;
+    cursor: pointer;
+}
+.item-content-right button:disabled{
+    opacity: 0.5;
+}
+.item-content-right button span{
+    width: 123px;
+    height: 24px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}

@@ -1,0 +1,303 @@
+.content-information{
+    padding-left: 182px;
+    background: #F8F8F8;
+    padding-top: 95px;
+    width: 1440px;
+    position: relative;
+    padding-bottom: 99px;
+    display: flex;
+}
+.item-menu{
+    width: 237px;
+    border-right: 1.5px solid #E0E0E0;
+    font-family: SF Pro Text, sans-serif;
+    height: 520px;
+}
+.nav a{
+    cursor: pointer;
+}
+.nav .nav-link span{
+    line-height: normal;
+    font-size: 16px;
+    color: #757575;
+    height: 20px !important;
+}
+.nav .nav-link:nth-child(5) span{
+    color: #001527;
+}
+.item-content-right{
+    margin-left: 154px;
+}
+.item-content-right h2{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 32px;
+    color: #000000;
+    width: 410px;
+    height: 39px;
+    margin-bottom: 27px;
+}
+.item-content-right .W-2 .text-content{
+    font-family: SF Pro Text, sans-serif;
+    line-height: 31px;
+    font-size: 20px;
+    color: #000000;
+    width: 628px;
+    height: 63px;
+    margin-bottom: 19px;
+}
+.chooseTaxe{
+    margin-bottom: 26px;
+    display: flex;
+}
+.chooseTaxe .chooseToggle:first-child{
+    margin-right: 33px;
+}
+.chooseTaxe .chooseToggle{
+    display: flex;
+}
+.chooseToggle .checked{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid #E0E0E0;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-right: 8px;
+    
+}
+.chooseToggle .check{
+    background: #FF9100;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.chooseToggle .item-check{
+    position: absolute;
+    top: 7.5px;
+    left: 7.5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.chooseToggle span{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 22px;
+    color: #000000;
+    width: 33px;
+    height: 27px;
+}
+.W-2 .average{
+    margin-bottom: 75px;
+}
+.form-group label{
+    font-family: SF Pro Text, sans-serif;
+    line-height: normal;
+    font-size: 14px;
+    color: #757575;
+    width: 292px;
+    height: 17px;
+}
+.form-group input{
+    width: 344px;
+    height: 62px;
+    border: 2px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 12px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 20px;
+    color: #757575;
+    padding: 0 26px;
+}
+.form-group>.form-control:focus{
+    border: 2px solid #FF9100;
+    box-sizing: border-box;
+    border-radius: 12px;
+    box-shadow: none;
+}
+.marial-status{
+    display: flex;
+}
+.marial-status .item-marial-left{
+    margin-right: 100px
+}
+.marial-status .item-marial-left p{
+    font-family: SF Pro Text, sans-serif;
+    line-height: 31px;
+    font-size: 20px;
+    color: #000000;
+    width: 138px;
+    height: 32px;
+    margin-bottom: 19px;
+}
+.marial-status .item-marial-right p{
+    font-family: SF Pro Text, sans-serif;
+    line-height: 31px;
+    font-size: 20px;
+    color: #000000;
+    width: 83px;
+    height: 32px;
+    margin-bottom: 19px;
+}
+.item-marial-right .add-sub{
+    display: flex;
+}
+.item-marial-right .add-sub button{
+    width: 30px;
+    background: #FF9100;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+    outline: 0;
+}
+.item-content-right .add-sub .value{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 22px;
+    color: #001527;
+}
+.item-marial-right .add-sub button:first-child{
+    margin-right: 20px;
+}
+.item-marial-right .add-sub button:last-child{
+    margin-left: 21.25px
+}
+.desired-outCome{
+    margin-top: 75px;
+}
+.desired-outCome h3{
+    font-family: SF Pro Text, sans-serif;
+    line-height: 31px;
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 19px;
+    font-weight: normal
+}
+.desired-outCome .item-desired {
+    display: flex;
+    margin-bottom: 19px;
+}
+
+.desired-outCome .item-desired .img-desired{
+    border: 2px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 12px;
+    height: 241px;
+    position: relative;
+    margin-right: 33px;
+    width: 206.23px;
+    cursor: pointer;
+}
+.desired-outCome .item-desired .img-desired:hover{
+    border: 2px solid #FF9100;
+    box-sizing: border-box;
+    border-radius: 12px;
+    box-shadow: none;
+}
+.desired-outCome .item-desired .img-desired span{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 37px;
+    font-size: 22px;
+    text-align: center;
+    color: #001527;
+}
+.desired-outCome .item-desired .img-desired:first-child img{
+    position: absolute;
+    width: 143.83px;
+    height: 126.16px;
+    left: 31.17px;
+    top: 43.16px;
+}
+.desired-outCome .item-desired .img-desired:first-child span{
+    position: absolute;
+    bottom: 20.38px;
+    left: 62.35px;
+    width: 81.53px;
+    height: 38.37px;
+}
+.desired-outCome .item-desired .img-desired:nth-child(2) img{
+    width: 102.45px;
+    height: 107.81px;
+    position: absolute;
+    top: 52.76px;
+    left: 51.55px;
+}
+.desired-outCome .item-desired .img-desired:nth-child(2) span{
+    position: absolute;
+    width: 118.7px;
+    height: 38.37px;
+    left: 43.16px;
+    bottom: 20.38px;
+}
+.desired-outCome .item-desired .img-desired:last-child img{
+    width: 76.3px;
+    height: 81.53px;
+    position: absolute;
+    top: 64.75px;
+    left: 59.95px;
+}
+.desired-outCome .item-desired .img-desired:last-child span{
+    position: absolute;
+    bottom: 20.38px;
+    width: 50.36px;
+    height: 38.37px;
+    left: 77.93px;
+}
+.desired-outCome p{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 37px;
+    font-size: 22px;
+    color: #757575;
+    width: 492px;
+    height: 74px;
+    margin-bottom: 57px;
+}
+.saveChanges .btnSave button{
+    background: #FF9100;
+    border-radius: 44px;
+    width: 240px;
+    height: 54px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    margin-bottom: 31px;
+    cursor: pointer;
+    outline: 0;
+}
+.saveChanges span{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 37px;
+    font-size: 22px;
+    text-align: center;
+    color: #757575;
+    width: 170px;
+    height: 37px;
+}

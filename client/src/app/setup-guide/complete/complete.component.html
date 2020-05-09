@@ -1,0 +1,21 @@
+<!----------Header----------->
+<header>
+    <a [routerLink]="['/setup-guide']">
+        <img src="assets/images/setup-guide/logo.png" alt="">
+    </a> 
+    <h5>Account Setup</h5>
+    <a href="" class="save">Save and Exit</a>
+</header>
+  
+<!--------Content-------->
+<div class="step-line">
+    <div class="step-line-2"></div>
+</div>
+<div id="complete">
+    <img src="assets/images/setup-guide/check.png" alt="">
+    <h4>You’re all set up and ready to go!</h4>
+    <div class="link-end">
+        <a (click)="gotoDashboard()" style="cursor: pointer;">Go to dashboard</a>
+        <i class="fas fa-chevron-right"></i>
+    </div>
+</div>

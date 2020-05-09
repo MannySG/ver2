@@ -1,0 +1,31 @@
+<!----------Header----------->
+<header>
+    <a [routerLink]="['/setup-guide']">
+        <img src="assets/images/setup-guide/logo.png" alt="">
+    </a> 
+    <h5>Account Setup</h5>
+    <a href="" class="save">Save and Exit</a>
+</header>
+
+<!----------Content----------->
+<div class="step-line">
+    <div class="step-line-2"></div>
+</div>
+
+<div id="method">
+    <h4>Tax Withholding</h4>
+    <p class="title">Choose your own flat rate to withhold or let us help you decide by taking our tax interview.</p>
+    <button class="icon-left" (click)="Whatyoudo()">
+        <i class="fas fa-chevron-left" ></i>
+    </button>
+    <div class="info-icon">
+        <img (click)="textToggle()" src="assets/images/setup-guide/info.png" alt="">
+        <div class="infomation-hidden" [hidden]="text">
+            <p >Taxes are due quarterly as a contractor and if they are not paid on time, then penalties are added to the amount you owe. Safeholding through Better ensures payments are made on time, saving you money. Answering just a few simple questions allows Better to fully automate this process, so you can focus on your work.</p>
+        </div>
+    </div>
+    <button class="continue" (click)="NextW2()">
+        <span>Continue to tax interview</span>
+    </button>
+    <p class="bottom">I’ll decide my own rate</p>
+</div>

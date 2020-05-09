@@ -1,0 +1,104 @@
+<button id="scrollTo">
+  <i class="fa fa-arrow-up"></i>
+</button>
+<div class="about-us">
+  <div id="about-us-top">
+    <div class="about-us-left">
+      <h1>Why Better?</h1>
+      <p>{{contentLeft}}</p>
+      <button type="button"> Get Safehold </button>
+    </div>
+    <div class="about-us-right">
+      <img [src]="img1" class="img-fluid">
+    </div>
+  </div>
+
+  <div id="about-helping">
+    <div class="about-helping-left">
+      <img [src]="img2" class="img-fluid">
+    </div>
+    <div class="about-helping-right">
+      <h2>Helping solopreneurs via technology solutions</h2>
+      <p>{{contentRight}}</p>
+    </div>
+  </div>
+
+  <div id="our-values">
+    <h2 class="text-center">Our values set the guiding principles for everything we do and everything we build.</h2>
+    <div class="content-values">
+      <div class="item-content">
+        <div class="icon-img">
+          <img [src]="imgIcon">
+        </div>
+        <div class="item-icon">
+          <span>Stability</span>
+          <p>{{content1}}</p>
+        </div>
+      </div>
+      <div class="item-content">
+        <div class="icon-img">
+          <img [src]="imgIcon">
+        </div>
+        <div class="item-icon">
+          <span>Optimism</span>
+          <p>{{content2}}</p>
+        </div>
+      </div>
+      <div class="item-content">
+        <div class="icon-img">
+          <img [src]="imgIcon">
+        </div>
+        <div class="item-icon">
+          <span>Community</span>
+          <p>{{content3}}</p>
+        </div>
+      </div>
+      <div class="item-content">
+        <div class="icon-img">
+          <img [src]="imgIcon">
+        </div>
+        <div class="item-icon">
+          <span>Practicality</span>
+          <p>{{content4}}</p>
+        </div>
+      </div>
+      <div class="item-content">
+        <div class="icon-img">
+          <img [src]="imgIcon">
+        </div>
+        <div class="item-icon">
+          <span>Progess</span>
+          <p>{{content5}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="first-product">
+    <div class="first-product-left">
+      <h2>Our first product</h2>
+      <p>{{contentProduct}}</p>
+      <span class="learn-more">
+        <a href="#">Learn more about safehold
+          <img [src]="imgPolygon">
+        </a>
+      </span>
+    </div>
+    <div class="first-product-right">
+      <img [src]="imgRight" class="img-fluid">
+    </div>
+  </div>
+
+  <div id="about-us-bot">
+      <div class="better-left">
+        <h2>Ready to get started?</h2>
+        <p>{{contentBotL}}</p>
+        <button type="button" (click)="createAccount()">Create an account</button>
+      </div>
+      <div class="better-right">
+        <h2>Have a question?</h2>
+        <p>{{contentBotR}}</p>
+        <button type="button">Get in touch</button>
+      </div>
+    </div>
+</div>

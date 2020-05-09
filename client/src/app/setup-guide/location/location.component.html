@@ -1,0 +1,29 @@
+<!----------Header----------->
+<header>
+    <a [routerLink]="['/setup-guide']">
+        <img src="assets/images/setup-guide/logo.png" alt="">
+    </a>
+    <h5>Account Setup</h5>
+    <a href="" class="save">Save and Exit</a>
+</header>
+
+<!----------Content----------->
+<div class="step-line"></div>
+<div id="location">
+    <form>
+        <h4>Location</h4>
+        <p class="title">Firstly, we need to know where you’re based. This will help us calculate your local taxes.</p>
+        <input type="text" placeholder="Zip Code" ngModel name="zipCode" #checkZipCode>
+        <div class="enter-continue">
+            <div class="text-left">
+                <p class="continue">Continue</p>
+                <p class="enter">Press Enter</p>
+            </div>
+            <div (click)="zipCode()">
+                <button class="icon-right">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

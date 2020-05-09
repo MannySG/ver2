@@ -1,0 +1,104 @@
+<div style="background: #F2F2F2; height: 2px; width: 1440px;"></div>
+<div class="content-information">
+  <div class="item-menu">
+    <nav class="nav flex-column">
+      <a class="nav-link" [routerLink]="['/dashboard/profile']"><span>Profile</span></a>
+      <a class="nav-link" [routerLink]="['/dashboard/email']"><span>Email</span></a>
+      <a class="nav-link" [routerLink]="['/dashboard/password']"><span>Password</span></a>
+      <a class="nav-link" [routerLink]="['/dashboard/bank-account']"><span>Bank Account</span></a>
+      <a class="nav-link"><span>Tax Information</span></a>
+      <a class="nav-link" [routerLink]="['/dashboard/notifications']"><span>Notifications</span></a>
+      <a class="nav-link" [routerLink]="['/dashboard/help-support']"><span>Help & Support</span></a>
+      <a class="nav-link" [routerLink]="['/dashboard/contact-us']"><span>Contact Us</span></a>
+      <a class="nav-link"><span>Report an Issue</span></a>
+      <a class="nav-link" [routerLink]="['/dashboard/payments-report']"><span>Reports of Payments</span></a>
+      <a class="nav-link" [routerLink]="['/dashboard/privacy-policy']"><span>Privacy Policy</span></a>
+      <a class="nav-link" [routerLink]="['/dashboard/terms-conditions']"><span>Terms & Conditions</span></a>
+      <a class="nav-link" [routerLink]="['/dashboard/delete-account']"><span>Delete Your Account</span></a>
+    </nav>
+  </div>
+  <div class="item-content-right">
+    <h2>Change your tax information</h2>
+    <div class="W-2">
+      <div class="text-content">Do you have a W-2 employee job where taxes are automatically taken out?</div>
+      <div class="chooseTaxe">
+        <div class="chooseToggle">
+          <div class="checked" *ngIf="!checked" (click)="ShowChecked()"></div>
+          <div class="check" *ngIf="checked" (click)="ShowChecked()">
+            <div class="item-check"></div>
+          </div>
+          <span>Yes</span>
+        </div>
+        <div class="chooseToggle">
+          <div class="checked" *ngIf="checked" (click)="ShowChecked()"></div>
+          <div class="check" *ngIf="!checked" (click)="ShowChecked()">
+            <div class="item-check"></div>
+          </div>
+          <span>No</span>
+        </div>
+      </div>
+      <div class="average" *ngIf="checked">
+        <div class="form-group">
+          <label>Average pay per month</label>
+          <input type="text" class="form-control" [value]="money">
+        </div>
+      </div>
+
+      <div class="marial-status">
+        <div class="item-marial-left">
+          <p>Marial Status</p>
+          <div class="chooseTaxe">
+            <div class="chooseToggle">
+              <div class="checked" *ngIf="!check" (click)="ShowCheck()"></div>
+              <div class="check" *ngIf="check" (click)="ShowCheck()">
+                <div class="item-check"></div>
+              </div>
+              <span>Single</span>
+            </div>
+            <div class="chooseToggle">
+              <div class="checked" *ngIf="check" (click)="ShowCheck()"></div>
+              <div class="check" *ngIf="!check" (click)="ShowCheck()">
+                <div class="item-check"></div>
+              </div>
+              <span>Married</span>
+            </div>
+          </div>
+        </div>
+        <div class="item-marial-right">
+          <p>Children</p>
+          <div class="add-sub">
+            <button (click)="onSub()">-</button>
+            <div class="value">{{value}}</div>
+            <button (click)="onAdd()">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="desired-outCome">
+        <h3>Desired Outcome</h3>
+        <div class="item-desired">
+          <div class="img-desired">
+            <img [src]="imgRefund">
+            <span>Refund</span>
+          </div>
+          <div class="img-desired">
+            <img [src]="imgBreakeven">
+            <span>Breakeven</span>
+          </div>
+          <div class="img-desired">
+            <img [src]="imgOwe">
+            <span>Owe</span>
+          </div>
+        </div>
+        <p>{{contentDesired}}</p>
+      </div>
+
+      <div class="saveChanges text-center">
+        <div class="btnSave">
+          <button type="submit">Save Changes</button>
+        </div>
+        <span>Switch to flat rate</span>
+      </div>
+    </div>
+  </div>
+</div>

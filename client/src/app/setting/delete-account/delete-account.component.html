@@ -1,0 +1,66 @@
+<div style="background: #F2F2F2; height: 2px; width: 1440px;"></div>
+<div class="content-deleteAccount blur-content" [class.blur-content]="showBlur1" [class.blur-content]="showBlur2">
+  <div class="item-menu">
+    <nav class="nav flex-column">
+      <a class="nav-link " [routerLink]="['/dashboard/profile']"><span>Profile</span></a>
+      <a class="nav-link" [routerLink]="['/dashboard/email']"><span>Email</span></a>
+      <a class="nav-link" [routerLink]="['/dashboard/password']"><span>Password</span></a>
+      <a class="nav-link" [routerLink]="['/dashboard/bank-account']"><span>Bank Account</span></a>
+      <a class="nav-link" [routerLink]="['/dashboard/tax-information']"><span>Tax Information</span></a>
+      <a class="nav-link" [routerLink]="['/dashboard/notifications']"><span>Notifications</span></a>
+      <a class="nav-link " [routerLink]="['/dashboard/help-support']"><span>Help & Support</span></a>
+      <a class="nav-link " [routerLink]="['/dashboard/contact-us']"><span>Contact Us</span></a>
+      <a class="nav-link "><span>Report an Issue</span></a>
+      <a class="nav-link " [routerLink]="['/dashboard/payments-report']"><span>Reports of Payments</span></a>
+      <a class="nav-link " [routerLink]="['/dashboard/privacy-policy']"><span>Privacy Policy</span></a>
+      <a class="nav-link " [routerLink]="['/dashboard/terms-conditions']"><span>Terms & Conditions</span></a>
+      <a class="nav-link "><span>Delete Your Account</span></a>
+    </nav>
+  </div>
+  <div class="item-content-right">
+    <h2>Temporarily deactivate your account</h2>
+    <p>{{contentDeactivate}}</p>
+    <button class="btn-activate" type="button"  (click)="BlurContent1()">
+      Deactivate Account
+    </button>
+    <h2 class="text-delete">Delete your account</h2>
+    <p>{{contentDelete}}</p>
+    <button class="btn-delete" type="button"  (click)="BlurContent2()">
+      Delete Account
+    </button>
+  </div>
+</div>
+
+<div class="modal-1" *ngIf="showBlur1" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <h2>Are you sure?</h2>
+        <div class="text-content">
+          <p>You are about to temporarily disable your account. Continue?</p>
+        </div>
+        <div class="button-activate">
+          <button type="button" (click)="DeActivateAccount()"><span>Yes, deactivate my account</span></button>
+          <button type="button" (click)="deCline1()"><span>No, I've changed my mind</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-2" *ngIf="showBlur2">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <h2>Are you sure?</h2>
+        <div class="text-content">
+          <p>You are about to permanentaly delete your account. Continue?</p>
+        </div>
+        <div class="button-delete">
+          <button type="button" (click)="DeleteAccount()"><span>Yes, delete my account</span></button>
+          <button type="button" (click)="deCline2()"><span>No, I've changed my mind</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

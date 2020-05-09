@@ -1,0 +1,163 @@
+/*========Header==========*/
+header{
+    display: flex;
+}
+header img{
+    margin: 32px 0 29px 44px;
+}
+header h5{
+    width: 141px;
+    height: 35px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 34px;
+    font-size: 22px;
+    text-align: center;
+    color: #001527; 
+    margin: 33px 0 22px 578px;
+    white-space: nowrap;
+}
+header a.save{
+    margin: 36px 55px 34px 490px;
+    width: 104px;
+    height: 22px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 18px;
+    text-align: right;
+    color: #757575;
+    white-space: nowrap;
+}
+
+/*==========Content========*/
+.step-line {
+    height: 5px;
+    background: #E0E0E0;
+    position: relative;
+    width: 1440px;
+}
+.step-line-2{
+    height: 5px;
+    position: absolute;
+    -webkit-animation-name: line;  
+    -webkit-animation-duration: 5s;   
+    -webkit-animation-fill-mode: forwards; 
+    animation-name: line;
+    animation-duration: 5s;  
+    animation-fill-mode: forwards;
+    background-color: orange;
+}
+@keyframes line {
+    from {width: 900px;}
+    to {width: 1080px; }
+}
+#i-bank{
+    font-family: Lato;
+    margin-top : 186px;
+    width: 1440px;
+}
+#i-bank .title h4{
+    width: 354px;
+    height: 39px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 32px;
+    text-align: center;
+    color: #001527;
+    margin: 0 543px;
+}
+#i-bank .title p{
+    width: 548px;
+    height: 148px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 37px;
+    font-size: 22px;
+    text-align: center;
+    color: #757575;
+    margin: 29px 446px 0 446px;
+}
+#i-bank button.icon-left {
+    top: 426px;
+    left: 132px;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background: #E0E0E0;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+}
+#i-bank button.icon-left:focus {
+    outline: none;
+}
+#i-bank button.icon-left i{
+    width: 8px;
+    height: 14px;
+}
+#i-bank .group-input{
+    width: 430px;
+    margin: 20px auto 0 auto;
+}
+#i-bank .group-input input{
+    border: 2px solid #E0E0E0;
+    width: 100%;
+    height: 62px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 19px 32px;
+}
+#i-bank .group-input input:focus{
+    outline: none;
+}
+#i-bank .group-input input.type-integrate:focus{
+    border: 2px solid #FF9100;
+}
+#i-bank .enter-continue{
+    display: flex;
+    margin: 63px 637px 283px 642px ;
+}
+#i-bank .enter-continue p.continue{
+    width: 75px;
+    height: 22px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 0;
+}
+#i-bank .enter-continue p.enter{
+    width: 92px;
+    height: 22px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 18px;
+    color: #BDBDBD;
+}
+#i-bank .enter-continue button.icon-right{
+    width: 48px;
+    height: 48px;
+    background: #FF9100;
+    border-radius: 50%;
+    border: 1px solid #FF9100;
+    margin-left: 21px;
+    cursor: pointer;
+    color: #fff;
+}
+#i-bank .enter-continue button.icon-right:focus{
+    outline:none;
+}
+#i-bank .enter-continue button.icon-right i{
+    width: 8px;
+    height: 14px;
+}

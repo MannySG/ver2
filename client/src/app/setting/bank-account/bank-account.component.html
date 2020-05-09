@@ -1,0 +1,48 @@
+<div style="background: #F2F2F2; height: 2px; width: 1440px;"></div>
+<div class="content-bankAccount">
+    <div class="item-menu">
+        <nav class="nav flex-column">
+            <a class="nav-link " [routerLink]="['/dashboard/profile']"><span>Profile</span></a>
+            <a class="nav-link" [routerLink]="['/dashboard/email']"><span>Email</span></a>
+            <a class="nav-link" [routerLink]="['/dashboard/password']"><span>Password</span></a>
+            <a class="nav-link"><span>Bank Account</span></a>
+            <a class="nav-link" [routerLink]="['/dashboard/tax-information']"><span>Tax Information</span></a>
+            <a class="nav-link " [routerLink]="['/dashboard/notifications']"><span>Notifications</span></a>
+            <a class="nav-link " [routerLink]="['/dashboard/help-support']"><span>Help & Support</span></a>
+            <a class="nav-link " [routerLink]="['/dashboard/contact-us']"><span>Contact Us</span></a>
+            <a class="nav-link "><span>Report an Issue</span></a>
+            <a class="nav-link " [routerLink]="['/dashboard/payments-report']"><span>Reports of Payments</span></a>
+            <a class="nav-link " [routerLink]="['/dashboard/privacy-policy']"><span>Privacy Policy</span></a>
+            <a class="nav-link " [routerLink]="['/dashboard/terms-conditions']"><span>Terms & Conditions</span></a>
+            <a class="nav-link " [routerLink]="['/dashboard/delete-account']"><span>Delete Your Account</span></a>
+        </nav>
+    </div>
+    <div class="item-content-right">
+        <h2>Your linked bank accounts</h2>
+        <div class="bank-your-account" *ngFor="let bank of lstBank">
+            <div class="bank-account">
+                <div class="logo">
+                    <img src="{{bank.blank.logoUrl}}">
+                    <span>{{bank?.blank.name}}</span>
+                </div>
+                <button (click)="unLink(bank?._id)">Unlink</button>
+            </div>
+            <div class="bottom-account"></div>
+            <div class="vince-account">
+                <label class="switch ">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+                <div class="text-bank">
+                    <p>{{bank?.accounts[0].name}}</p>
+                    <span>{{bank?.accounts[0].subtype}} | </span>
+                    <span>
+                        <img [src]="img3bi">
+                        1 2 3
+                    </span>
+                </div>
+                <a href="#"><span>EDIT</span></a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,340 @@
+.dashboard{
+    margin-top: 26px;
+    font-family: Lato;
+    width: 1250px;
+    margin-left: 95px;
+}
+.bt-left{
+    z-index: 1;
+}
+.bt-left h2{
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    font-size: 60px;
+    color: #001527;
+    margin-top: 129px;
+    width: 636px;
+    height: 216px;
+    margin-bottom: 0;
+
+}
+#better-top .bt-left p{
+    line-height: 34px;
+    font-size: 22px;
+    color: #757575;
+    margin-top: 12px;
+    margin-bottom: 54px;
+    width: 597px;
+    height: 69px;
+    font-style: normal;
+    font-weight: normal;
+}
+.btn-acc button{
+    border: none;
+    background: #FF9100;
+    border-radius: 44px;
+    cursor: pointer;
+    width: 240px;
+    height: 54px;
+    outline: 0;
+}
+.btn-acc button span{
+    color: #fff;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    text-align: center;
+    width: 161px;
+    height: 24px;
+}
+.btn-acc a{
+    font-size: 22px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    color: #FF9100;
+    margin-left: 74px;
+    width: 112px;
+    height: 57px;
+    padding: 0;
+}
+.bt-right{
+    top: 144px;
+    left: 575px;
+    width: 1022px !important;
+    height: auto;
+    position: absolute;
+}
+
+/* started-safehold */
+#start-Sh{
+    margin-top: 240px;
+}
+.content-start{
+    display: flex;
+}
+.img-L img{
+    position: absolute;
+    left: 52px;
+    width: 604px !important;
+    height: 797.28px !important;
+}
+.text-content-right{
+    padding-top: 215px;
+    margin-left: 685px;
+}
+.text-content-right h2{
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 32px;
+    color: #001527;
+    width: 426px;
+    height: 77px;
+}
+.text-content-right p{
+    margin-top: 32px;
+    line-height: 37px;
+    font-size: 22px;
+    color: #757575;
+    margin-bottom: 56px;
+    width: 565px;
+    height: 185px;
+    font-style: normal;
+    font-weight: normal;
+
+}
+.text-content-right .get-started{
+    position: relative;
+}
+.text-content-right .get-started a{
+    font-size: 22px;
+    color: #FF9100;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    width: 249px;
+    height: 27px;
+}
+.text-content-right .get-started a img{
+    position: absolute;
+    left: 265px;
+    top: 1px;
+}
+
+/* benefits */
+#benefits{
+    margin-top: 390px;
+}
+#benefits h2{
+    font-size: 32px;
+    color: #001527; 
+    font-weight: bold;
+    line-height: normal;
+    font-style: normal;
+    margin: auto;
+    height: 39px;
+}
+.icon-benefits{
+    display: flex;
+    margin-top: 38px;
+    padding: 0 55px;
+}
+.item-benefits{
+    margin-right: 82px;
+    text-align: center;
+}
+.item-benefits:nth-child(2){
+    margin-right: 83px;
+}
+.item-benefits:nth-child(3){
+    margin-right: 74px;
+}
+.item-benefits:nth-child(4){
+    margin-right: 91px;
+    
+} 
+.item-benefits:last-child{
+    margin-right: 0;
+}
+.item-benefits:first-child .text-top span{
+    width: 112px;
+}
+.item-benefits:nth-child(2) .text-top span{
+    width: 119px;
+}
+.item-benefits:nth-child(3) .text-top span{
+    width: 76px;
+}
+.item-benefits:nth-child(4) .text-top span{
+    width: 124px;
+}
+.item-benefits:nth-child(5) .text-top span{
+    width: 128px;
+}
+.text-top{
+    margin-top: 33px;
+    margin-bottom: 9px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #001527;
+    line-height: normal;
+    font-style: normal;
+    height: 27px;
+    
+}
+.text-bot{
+    font-size: 22px;
+    text-align: center;
+    color: #757575;
+    opacity: 0.6;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    height: 27px;
+    width: 162px;
+
+}
+.item-benefits:nth-child(2) .text-bot{
+    height: 53px;
+}
+.item-benefits:nth-child(3) .text-bot{
+    height: 53px;
+}
+.item-benefits:nth-child(4) .text-bot{
+    height: 80px;
+}
+/* LearnMore */
+#learnMore{
+    margin-top: 188px;
+    display: flex;
+}
+.learn-left{
+    padding-top: 160px;
+}
+.learn-left h2{
+    font-size: 32px;
+    color: #001527;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    margin-bottom: 32px;
+    width: 275px;
+    height: 39px;
+}
+.learn-left p{
+    line-height: 34px;
+    font-size: 22px;
+    color: #757575;
+    opacity: 0.6;
+    margin-bottom: 54px;
+    width: 390px;
+    width: 409px;
+    height: 138px;
+    font-style: normal;
+    font-weight: normal;
+}
+.learn-left .learn-link{
+    position: relative;
+}
+.learn-left .learn-link a{
+    font-size: 22px;
+    color: #FF9100;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    width: 262px;
+    height: 27px;
+}
+.learn-left .learn-link a img{
+    position: absolute;
+    left: 278px;
+    top: 1px;
+}
+.learn-right {
+    width: 798px !important;
+    height: 608px !important;
+    position: absolute;
+    left: 599px;
+    right: 43px;
+}
+
+
+/* better-bot */
+#better-bot{
+    margin-top: 368px;
+    margin-bottom: 213px;
+    display: flex;
+}
+#better-bot h2{
+    color: #000;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    width: 303px;
+    height: 39px;
+}
+#better-bot p{
+    line-height: 34px;
+    font-size: 22px;
+    color: #757575;
+    opacity: 0.6;
+    margin-top: 32px;
+    margin-bottom: 69px;
+    font-style: normal;
+    font-weight: normal;
+    width: 524px !important;
+    height: 74px;
+}
+#better-bot .better-left button{
+    border: 3px solid #FF9100;
+    box-sizing: border-box;
+    border-radius: 44px;
+    background: #FF9100;
+    cursor: pointer;
+    height: 54px;
+    width: 240px;
+}
+#better-bot .better-left button span{
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 162px;
+}
+#better-bot .better-right{
+    position: absolute;
+    left: 824px;
+}
+#better-bot .better-right button{
+    border: 3px solid #FF9100;
+    background: unset;
+    box-sizing: border-box;
+    border-radius: 44px;
+    cursor: pointer;
+    height: 54px;
+    width: 240px;
+    outline: 0;
+}
+#better-bot .better-right button span{
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 20px;
+    text-align: center;
+    color: #001527;
+    width: 110px;
+    height: 24px;
+}
+#better-bot button:active{
+    text-decoration: underline;
+}
+#better-bot .better-right h2{
+    width: 242px;
+    height: 39px;
+}

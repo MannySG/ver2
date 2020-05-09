@@ -1,0 +1,60 @@
+<!----------Header----------->
+<header>
+    <a [routerLink]="['/setup-guide']">
+        <img src="assets/images/setup-guide/logo.png" alt="">
+    </a>
+    <h5>Account Setup</h5>
+    <a href="" class="save">Save and Exit</a>
+</header>
+
+<!--------Content-------->
+<div class="step-line">
+    <div class="step-line-2"></div>
+</div>
+
+<div id="marial-status">
+    <div class="title">
+        <h4>Marital Status</h4>
+        <p>Tax rates can change depending on peoples marital status and children, so this will help is calculate
+            accurately.</p>
+    </div>
+    <div class="radio-status">
+        <p>What is your marital status?</p>
+        <button class="icon-left" (click)="W2()">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="chooseTaxe">
+            <div class="chooseToggle">
+                <div class="checked" *ngIf="!checked" (click)="ShowChecked()"></div>
+                <div class="check" *ngIf="checked" (click)="ShowChecked()">
+                    <div class="item-check"></div>
+                </div>
+                <span>Single</span>
+            </div>
+            <div class="chooseToggle">
+                <div class="checked" *ngIf="checked" (click)="ShowChecked()"></div>
+                <div class="check" *ngIf="!checked" (click)="ShowChecked()">
+                    <div class="item-check"></div>
+                </div>
+                <span>Married</span>
+            </div>
+        </div>
+    </div>
+    <div class="view-child">
+        <p>Do you have children? If so, how many?</p>
+        <div class="button-view">
+            <button (click)="onSub()"><span> - </span></button>
+            <div class="child"><span>{{value}}</span></div>
+            <button (click)="onAdd()"><span> + </span></button>
+        </div>
+    </div>
+    <div class="enter-continue">
+        <div class="text-left">
+            <p class="continue">Continue</p>
+            <p class="enter">Press Enter</p>
+        </div>
+        <button class="icon-right" (click)="Outcome()">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+</div>

@@ -1,0 +1,74 @@
+<!----------Header----------->
+<header>
+    <img src="assets/images/setup-guide/logo.png" alt="">
+</header> 
+
+<!----------Intro----------->
+<div class="step-line"></div>
+<div id="intro">
+    <div class="content-left">
+        <div class="title">
+            <h4>Let’s get you started.</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac nisi varius, tincidunt nisl vel, pharetra leo.</p>
+        </div>
+        <div class="step">
+            <ul>
+                <li>
+                    <img src="assets/images/setup-guide/eclip.png" alt="">
+                    <span>1</span>
+                    <div class="item">
+                        <h6>Personal information</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+                    </div>   
+                </li>
+                <li>
+                    <img src="assets/images/setup-guide/eclip.png" alt="">
+                    <span>2</span>
+                    <div class="item">
+                        <h6>Your desired outcome</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+                    </div>   
+                </li>
+                <li>
+                    <img src="assets/images/setup-guide/eclip.png" alt="">
+                    <span>3</span>
+                    <div class="item">
+                        <h6>Link your bank account</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+                    </div>   
+                </li>
+            </ul>
+        </div>
+
+        <button (click)="Location()">
+            <span>Begin setup process</span>
+        </button>
+    </div>
+
+    <div class="image-right">
+        <img src="assets/images/setup-guide/image.png" alt="">
+    </div>
+</div>
+
+<!----------Footer----------->
+<footer>
+    <div class="content-footer">
+      <div id="footer-left">
+        <span class="text-content">Download our mobile app</span>
+        <div class="application">
+          <img [src]="imgApp">
+          <img [src]="imgAndroid">
+        </div>
+      </div>
+      <div id="footer-right">
+        <div class="text-content">
+          <a href="mailto: support@getsafehold.com">support@getsafehold.com</a>
+        </div>
+        <div class="help">
+          <img [src]="imgHelp">
+          <span class="text-content">Help & Support</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+

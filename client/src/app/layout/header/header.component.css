@@ -1,0 +1,49 @@
+.header{
+    width: 1250px;
+    height: 54px;
+    margin-left: 95px;
+    margin-top: 64px;
+    z-index: 1;
+    margin-right: 95px;
+    line-height: 54px;
+    font-family: Lato;
+
+}
+.header #logo a img{
+    width: 162px;
+    height: 28.35px;
+}
+#menu .nav li button{
+    border: none;
+    background: unset;
+    cursor: pointer;
+    margin-right: 39px;
+}
+#menu .nav li button span{
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 20px;
+    color: #001527;
+}
+#menu .nav li:last-child button{
+    margin-right: 0;
+}
+#menu .nav li button:hover{
+    border: 2px solid #FF9100;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 0 34px;
+}
+#menu .nav li button:hover span{
+    font-weight: bold;
+}
+button:focus {
+    outline:0;
+}
+
+button.nav-link.router-link-active span {
+    border-bottom: 2px solid #FF9100 ;
+    font-weight: bold !important;
+    outline: 0;
+}

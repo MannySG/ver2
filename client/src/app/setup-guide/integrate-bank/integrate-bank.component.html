@@ -1,0 +1,29 @@
+<!----------Header----------->
+<header>
+    <a [routerLink]="['/setup-guide']">
+        <img src="assets/images/setup-guide/logo.png" alt="">
+    </a>
+    <h5>Account Setup</h5>
+    <a href="" class="save">Save and Exit</a>
+</header>
+
+<!--------Content-------->
+<div class="step-line">
+    <div class="step-line-2"></div>
+</div>
+<div id="i-bank">
+    <div class="title">
+        <h4>Integrate with your bank</h4>
+        <button class="icon-left" (click)="Desired()">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <p>We integrate with your bank to automatically track your income and stay on top of your tax situation. This
+            means there is no work required of you. We will take it from here.</p>
+    </div>
+    <ngx-plaid-link-button env="sandbox" publicKey="4ea459a34f97c26bade8cd5b27f345"
+        (Success)="onPlaidSuccess($event)" (Exit)="onPlaidExit($event)" (Load)="onPlaidLoad($event)"
+        (Event)="onPlaidEvent($event)" className="launch-plaid-link-button"
+        (Click)="onPlaidClick($event)">
+        <i class="fas fa-chevron-right"></i>
+    </ngx-plaid-link-button>
+</div>

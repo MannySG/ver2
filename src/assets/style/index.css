@@ -1,0 +1,1477 @@
+.App {
+    overflow-x: hidden;
+}
+
+.hiddenContent {
+    display: none;
+}
+
+.showContent {
+    display: block;
+}
+
+
+
+/* Header */
+/* .header {
+    border-bottom: 0.5px solid rgba(60, 60, 67, 0.29);
+} */
+
+.logo_page {
+    max-width      : 1180px;
+    margin         : auto;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    padding        : 28px 0;
+}
+
+.img_logo img {
+    width : 125.6px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.text_header {
+    max-width  : 295px;
+    min-height : 27px;
+    display    : flex;
+    align-items: center;
+    font-family: Heebo;
+    font-style : normal;
+    font-weight: normal;
+    font-size  : 18px;
+    line-height: 26px;
+    color      : rgba(60, 60, 67, 0.6);
+    white-space: nowrap;
+}
+
+.text_header a {
+    color          : rgba(60, 60, 67, 0.6);
+    text-decoration: underline;
+    margin-right   : 5px;
+}
+
+.text_header a:hover {
+    color          : rgba(60, 60, 67, 0.6);
+    text-decoration: underline;
+}
+
+/*  WaitList */
+.waitlist_page {
+    font-family: Heebo;
+    font-style : normal;
+    width      : 100%;
+    height     : auto;
+    position   : relative;
+    overflow   : hidden;
+
+}
+
+.wrapper_content,
+.taxes {
+    display        : flex;
+    justify-content: flex-end;
+
+}
+
+.home_page {
+    position: relative;
+}
+
+.content_page,
+.content_taxes,
+.content_home {
+    display  : flex;
+    max-width: 1180px;
+    margin   : auto;
+    width    : 100%;
+}
+
+.content_page {
+    justify-content: flex-start;
+}
+
+.content_home {
+    justify-content: center !important;
+}
+
+.content_left {
+    margin-bottom: 247px;
+    text-align   : center;
+}
+
+.content_left h1 {
+    font-family: Heebo;
+    font-style : normal;
+    font-weight: bold;
+    font-size  : 65px;
+    line-height: 120%;
+    /* or 77px */
+    color     : #000000;
+    min-height: 156px;
+    margin    : 167px auto 48px auto;
+    max-width : 900px;
+    text-align: center;
+}
+
+
+.content_left p {
+    font-weight: normal;
+    font-size  : 36px;
+    line-height: 150%;
+    color      : #000000;
+    max-width  : 900px;
+    min-height : 44px;
+    margin     : 0 auto 64px auto;
+    text-align : center;
+}
+
+.content_page .actions,
+.content_home .actions {
+    display        : flex;
+    max-width      : 568px;
+    justify-content: space-between;
+    align-items    : flex-start;
+}
+
+.content_home .actions {
+    margin: auto;
+}
+
+.content_page input {
+    background           : #FFF;
+    /* border            : 1px solid #E0E0E0 !important; */
+    -webkit-box-sizing   : border-box;
+    box-sizing           : border-box;
+    border-radius        : 8px;
+    width                : 311px;
+    height               : 64px;
+    font-family          : Heebo;
+    font-style           : normal;
+    font-weight          : normal;
+    font-size            : 18px;
+    line-height          : 26px;
+    color                : #000000 !important;
+    padding              : 19px 24px 18px 24px;
+    -webkit-appearance   : none;
+    -moz-appearance      : none;
+    appearance           : none;
+    box-shadow           : none;
+    margin-right         : 17px;
+    outline              : none;
+    border               : none;
+    box-shadow           : 0px 2px 8px rgba(0, 0, 0, 0.1);
+    /* fix bugs iphone */
+}
+
+.content_page input::placeholder {
+    /* color: #757575; */
+    color   : rgba(60, 60, 67, 0.6)
+}
+
+.content_page input:focus {
+    border    : 1.5px solid #04B7FF !important;
+    box-sizing: border-box;
+}
+
+.content_page .wrapper_input {
+    position: relative;
+}
+
+.content_page .wrapper_input .txt_ip {
+    position      : absolute;
+    top           : 10px;
+    left          : 16px;
+    font-family   : Heebo;
+    font-style    : normal;
+    font-weight   : normal;
+    font-size     : 12px;
+    line-height   : 18px;
+    color         : rgba(60, 60, 67, 0.6);
+    mix-blend-mode: normal;
+    margin-bottom : 2px;
+    animation     : 0.1s ease-out 0s 1 txtInput;
+}
+
+@keyframes txtInput {
+    0% {
+        transform: translateY(50%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.content_page .inputChecked {
+    padding: 30px 32px 7px 16px;
+}
+
+.content_page .error {
+    border : 1px solid #000000 !important;
+    padding: 30px 32px 7px 16px;
+}
+
+.content_page .text_error {
+    font-family: Heebo;
+    font-style : normal;
+    font-weight: normal;
+    font-size  : 15px;
+    line-height: 22px;
+    margin-top : 16px;
+    color      : rgba(60, 60, 67, 0.6);
+    max-width  : 311px;
+    min-height : 23px;
+    text-align : left;
+}
+
+.content_page button {
+    border           : none;
+    background       : #000000;
+    border-radius    : 8px;
+    font-family      : Heebo;
+    font-style       : normal;
+    font-weight      : bold;
+    font-size        : 18px;
+    line-height      : 26px;
+    display          : -webkit-box;
+    display          : -ms-flexbox;
+    display          : flex;
+    -webkit-box-align: center;
+    -ms-flex-align   : center;
+    align-items      : center;
+    -webkit-box-pack : center;
+    -ms-flex-pack    : center;
+    justify-content  : center;
+    text-align       : center;
+    letter-spacing   : 2px;
+    text-transform   : uppercase;
+    color            : #FFFFFF;
+    outline          : 0;
+    cursor           : pointer;
+    width            : 256px;
+    height           : 64px;
+    white-space      : nowrap;
+    padding          : 0;
+}
+
+.content_page button span {
+    margin-top: 2px;
+
+}
+
+.content_page .already {
+    max-width    : 246px;
+    min-height   : 23px;
+    display      : flex;
+    align-items  : center;
+    font-family  : Heebo;
+    font-style   : normal;
+    font-weight  : normal;
+    font-size    : 15px;
+    line-height  : 22px;
+    color        : rgba(60, 60, 67, 0.6);
+    margin-top   : 108px;
+    margin-bottom: 141px;
+}
+
+.content_page .already span {
+    white-space: nowrap;
+}
+
+.content_page .already span:first-child {
+    text-decoration: underline;
+    margin-right   : 5px;
+    cursor         : pointer;
+}
+
+/* .content_page .content_right {
+    display         : flex;
+    margin-left     : 125px;
+    margin-bottom   : 48px;
+} */
+.img_home .img_right:first-child img:first-child {
+    position    : absolute;
+    max-width   : 513px;
+    left        : -45px;
+    bottom      : 0;
+    /* top      : 298px; */
+}
+
+.img_home .img_right:first-child img:nth-child(2) {
+    position : absolute;
+    max-width: 161.49px;
+    left     : 38.33px;
+    bottom   : 0;
+}
+
+.img_home .img_right:first-child img:last-child {
+    position    : absolute;
+    max-width   : 400px;
+    right       : -6px;
+    bottom      : 0;
+    /* top      : 417px; */
+}
+
+.content_right .img_right:first-child {
+    position : absolute;
+    top      : -383px;
+    max-width: 756px;
+    right    : -86px;
+}
+
+.content_right .img_right:first-child img,
+.img_home .img_right:first-child img {
+    width  : 100%;
+    z-index: -1;
+}
+
+.img_home .img_right:last-child {
+    display: none;
+}
+
+/* .turtle_run img {
+    width     : 199.12px;
+    height    : 100px;
+    background: transparent !important;
+}
+
+.turtle_run {
+    animation : 13s linear 0s infinite turtle;
+    position  : relative;
+    height    : 100px;
+    background: transparent !important;
+    display   : none !important;
+}
+
+.turtle_run .turtle1 {
+    position: absolute;
+    bottom  : 0;
+    left    : 0;
+    top     : 0;
+    z-index : -1;
+}
+
+.turtle_run .turtle2 {
+    position : absolute;
+    bottom   : 0;
+    transform: translateX(calc(-199.12px - (100vw - 243px)));
+    top      : 0;
+
+}
+
+@keyframes turtle {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: calc((100vw - 243px) + 199.12px);
+    }
+} */
+
+.taxes {
+    background   : #FFF;
+    width        : 100%;
+    /* margin-top: -2px */
+}
+
+.content_taxes {
+    align-items    : center;
+    padding        : 147px 0 148px 0;
+    justify-content: space-between;
+}
+
+/* .taxes_left .for-us {
+    width          : 194.59px;
+    height         : 36.51px;
+    background     : rgba(255, 255, 255, 0.1);
+    border-radius  : 6px;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    margin-bottom  : 32.49px;
+}
+
+.taxes_left .for-us span {
+    font-family: Heebo;
+    font-style : normal;
+    font-weight: 500;
+    font-size  : 18px;
+    line-height: 26px;
+    color      : #04B7FF;
+} */
+
+.taxes_left h1 {
+    font-weight  : bold;
+    font-size    : 56px;
+    line-height  : 120%;
+    max-width    : 500px;
+    min-height   : 202px;
+    color        : #000;
+    margin-bottom: 0;
+}
+
+/* .taxes_left p {
+    font-weight  : normal;
+    font-size    : 24px;
+    line-height  : 170%;
+    max-width    : 442px;
+    min-height   : 82px;
+    color        : rgba(235, 235, 245, 0.6);
+    margin-bottom: 0;
+} */
+
+.taxes_right .img_right {
+    max-width : 505px;
+    max-height: 305px;
+}
+
+.taxes_right .img_right img {
+    max-width: 100%;
+}
+
+/* Used SignUp */
+.page_other .logo_page {
+    padding: 0;
+}
+
+.page_other .logo_page .img_logo img {
+    width     : 209.33px;
+    height    : 40px;
+    margin-top: 80px;
+}
+
+.usedSignUp h1 {
+    max-width: 585px;
+}
+
+/* verifyCode */
+.verifyCode {
+    font-family  : Heebo;
+    font-style   : normal;
+    margin-bottom: 322px;
+}
+
+.verifyCode h1 {
+    font-weight  : bold;
+    font-size    : 64px;
+    line-height  : 120%;
+    max-width    : 606px;
+    min-height   : 77px;
+    margin-bottom: 32px;
+    margin-top   : 197px;
+    color        : #000;
+}
+
+.verifyCode .subtitle {
+    max-width    : 488px;
+    min-height   : 41px;
+    font-family  : Heebo;
+    font-style   : normal;
+    font-weight  : normal;
+    font-size    : 24px;
+    line-height  : 170%;
+    color        : rgba(60, 60, 67, 0.6);
+    margin-bottom: 48px;
+}
+
+.verifyCode .subtitle span {
+    cursor         : pointer;
+    text-decoration: underline;
+    margin-left    : 5px;
+}
+
+button.submit_desktop {
+    visibility: visible !important;
+}
+
+button.submit_mobile {
+    visibility: hidden !important;
+    width     : 215px !important;
+    margin    : unset !important;
+}
+
+button.disabledBT {
+    /* width        : 215px !important; */
+    margin          : unset !important;
+    /* background   : rgba(120, 120, 128, 0.16) !important; */
+}
+
+button.disabledBT span {
+    opacity: 0.25;
+}
+
+
+/* shareLink */
+.shareLink {
+    margin-top   : 177px;
+    margin-bottom: 301px;
+}
+
+.shareLink h1 {
+    font-family  : Heebo;
+    font-style   : normal;
+    font-weight  : bold;
+    font-size    : 64px;
+    line-height  : 120%;
+    color        : #000000;
+    min-height   : 77px;
+    margin-bottom: 32px;
+    margin-top   : 0;
+}
+
+.shareLink p {
+    max-width    : 528px;
+    min-height   : 82px;
+    margin-bottom: 48px;
+    margin-top   : 0;
+    font-size    : 24px;
+    line-height  : 170%;
+    color        : #000;
+}
+
+.shareLink .url_share,
+.shareLink .txt_link {
+    overflow                     : hidden;
+    text-overflow                : ellipsis;
+    background                   : #FFF;
+    border                       : 1px solid #E0E0E0 !important;
+    -webkit-box-sizing           : border-box;
+    box-sizing                   : border-box;
+    border-radius                : 8px;
+    max-width                    : 311px;
+    min-height                   : 64px;
+    font-family                  : Heebo;
+    font-style                   : normal;
+    font-weight                  : normal;
+    font-size                    : 18px;
+    line-height                  : 26px;
+    /* color                     : #001527 !important; */
+    color                        : rgba(60, 60, 67, 0.6) !important;
+    padding                      : 19px 24px 18px 24px;
+    -webkit-appearance           : none;
+    -moz-appearance              : none;
+    appearance                   : none;
+    box-shadow                   : none;
+    margin-right                 : 17px;
+    outline                      : none;
+}
+
+.shareLink .url_share {
+    display: none !important;
+}
+
+.shareLink a:hover {
+    text-decoration: none;
+}
+
+.show_rabbits {
+    display: none !important;
+}
+
+.rabbits {
+    width  : 100%;
+    display: none;
+}
+
+.rabbits img {
+    max-width: 100%;
+}
+
+.text_show_mobile,
+.show_text_shareLink {
+    display: none !important;
+}
+
+.show_text_shareLink span {
+    margin-top: 2px !important;
+}
+
+.down_the_line {
+    display: block;
+}
+
+/* TrackIncome */
+.trackIncome {
+    background: #FBFBFB;
+    margin-top: -2px;
+}
+
+.content_trackIncome {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    padding        : 100px 0;
+    max-width      : 1180px;
+    margin         : auto;
+}
+
+.trackIncome_left {
+    box-shadow   : 56px 120px 180px rgba(0, 0, 0, 0.1);
+    max-width    : 396.28px;
+    border-radius: 61px;
+}
+
+.trackIncome_left img {
+    max-width    : 100%;
+    background   : linear-gradient(153.63deg, #FFFFFF -0.02%, #F8F8F8 99.97%);
+    box-shadow   : inset 0px -4.58328px 16.0415px rgba(0, 0, 0, 0.1);
+    border-radius: 61px;
+}
+
+.trackIncome_right h1 {
+    font-family  : Heebo;
+    font-style   : normal;
+    font-weight  : bold;
+    font-size    : 56px;
+    line-height  : 120%;
+    color        : #000000;
+    max-width    : 500px;
+    min-height   : 135px;
+    margin-bottom: 48px;
+}
+
+.trackIncome_right p {
+    font-family  : Heebo;
+    font-style   : normal;
+    font-weight  : normal;
+    font-size    : 24px;
+    line-height  : 170%;
+    color        : #000000;
+    max-width    : 500px;
+    min-height   : 82px;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1440px) {
+
+    /* .content_page h1 {
+        max-width: 700px;
+    } */
+    .img_home .img_right:first-child {
+        right: 100px;
+    }
+
+    .verifyCode {
+        margin-bottom: 200px;
+    }
+
+    .verifyCode h1 {
+        max-width: 450px;
+    }
+
+    .shareLink {
+        margin-bottom: 220px;
+    }
+
+    .shareLink p {
+        min-height: 120px;
+        max-width : 470px;
+    }
+
+    .content_page .actions {
+        display  : inline-block;
+        max-width: 311px;
+    }
+
+    .content_page input {
+        margin-bottom: 16px;
+    }
+
+    .content_page button {
+        width: 311px;
+    }
+
+    .content_taxes {
+        width: 100%;
+    }
+
+
+    .content_page .text_error {
+        margin-top   : 0;
+        margin-bottom: 16px;
+    }
+
+    .content_page .already {
+        margin-top      : 73px;
+        /* margin-bottom: 41px; */
+    }
+
+    /* .img_home .img_right:first-child img:first-child {
+        top: 378px;
+    }
+
+    .img_home .img_right:first-child img:last-child {
+        top: 497px;
+    } */
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .logo_page,
+    .content_page,
+    .content_trackIncome {
+        max-width: 1024px;
+    }
+
+    .content_taxes {
+        max-width: 1024px;
+        margin   : auto;
+    }
+
+    .content_page {
+        margin-bottom: 0;
+    }
+
+    .content_page p {
+        max-width    : 500px;
+        /* margin-top: 100px; */
+    }
+
+    .content_page .text_error {
+        margin-bottom: 16px;
+        margin-top   : 0;
+    }
+
+    .content_right .img_right:first-child {
+        max-width: 600px;
+        top      : -305px;
+        right    : -68px;
+    }
+
+    .content_page .already {
+        margin-bottom: 80px;
+    }
+
+    .verifyCode {
+        margin-bottom: 170px;
+    }
+
+    .shareLink {
+        margin-top   : 100px;
+        margin-bottom: 100px;
+    }
+
+    .shareLink p {
+        max-width : 423px;
+        margin-top: 0;
+    }
+
+    /* .img_home .img_right:first-child img:first-child {
+        top: 420px;
+    }
+
+    .img_home .img_right:first-child img:last-child {
+        top: 539px
+    } */
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .logo_page,
+    .content_page,
+    .content_trackIncome {
+        max-width: 768px;
+    }
+
+    .taxes {
+        border-radius   : 0;
+        /* margin       : 0; */
+    }
+
+    .content_taxes {
+        max-width   : 768px;
+        margin-left : auto;
+        margin-right: auto;
+    }
+
+    .content_page h1 {
+        font-size: 50px;
+        max-width: 400px;
+    }
+
+    .home_page .content_page h1 {
+        min-height: 57px;
+        margin-top: 150px;
+        max-width : 1024px;
+    }
+
+    /* .down_the_line {
+        display: none
+    } */
+
+    .content_page p {
+        font-size    : 26px;
+        line-height  : 170%;
+        min-height   : 120px;
+        max-width    : 400px;
+        margin-bottom: 32px;
+    }
+
+    .home_page .content_page p {
+        min-height: 88px;
+
+    }
+
+    .img_home .img_right:first-child {
+        max-width: 350px;
+        right    : 70px;
+    }
+
+    .content_page .actions .url_share,
+    .content_page .actions .txt_link {
+        margin-bottom: 16px;
+    }
+
+    /* .turtle_run {
+        height: 80px;
+    }
+
+    .turtle_run img {
+        width : 150px;
+        height: 80px;
+    }
+
+    .turtle_run .turtle2 {
+        position : absolute;
+        bottom   : 0;
+        transform: translateX(calc(-150px - 100vw));
+        top      : 0;
+
+    }
+
+    @keyframes turtle {
+        0% {
+            margin-left: 0;
+        }
+
+        100% {
+            margin-left: calc(100vw + 150px);
+        }
+    } */
+
+    .taxes_left h1 {
+        font-size: 48px;
+        max-width: 350px;
+    }
+
+    .taxes_right .img_right {
+        margin-left: 0;
+        max-width  : 400px;
+    }
+
+    .content_page .already {
+        margin-bottom: 41px;
+    }
+
+    /* verifyCode  */
+    /* .verifyCode h1 {
+        min-height   : 40px;
+        margin-bottom: 0;
+    } */
+
+    .verifyCode .subtitle {
+        font-size: 22px;
+        max-width: 330px;
+    }
+
+    /* share link */
+    .shareLink p {
+        min-height: 80px;
+        max-width : 360px;
+    }
+
+    .img_home .img_right:first-child img:first-child {
+        max-width   : 410px;
+        /* top      : 400px; */
+    }
+
+    .img_home .img_right:first-child img:nth-child(2) {
+        max-width: 110px;
+        left     : 25px;
+    }
+
+    .img_home .img_right:first-child img:last-child {
+        max-width   : 352px;
+        /* top      : 465px; */
+    }
+
+    .trackIncome_left {
+        max-width    : 330px;
+        border-radius: 52px;
+    }
+
+    .trackIncome_left img {
+        border-radius: 52px;
+    }
+
+    .trackIncome_right h1 {
+        font-size: 48px;
+        max-width: 350px;
+    }
+
+    .trackIncome_right p {
+        max-width: 350px;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .content_page p {
+        max-width    : 350px;
+        margin-bottom: 24px;
+    }
+
+    .img_home .img_right:first-child img:first-child {
+        max-width: 360px;
+    }
+
+    .img_home .img_right:first-child img:nth-child(2) {
+        max-width: 90px;
+        left     : 20px;
+    }
+
+    .img_home .img_right:first-child img:last-child {
+        max-width: 300px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .verifyCode h1 {
+        margin-top: 100px;
+    }
+
+    .verifyCode {
+        margin-bottom: 100px;
+    }
+
+    .shareLink {
+        margin-top: 100px;
+    }
+
+    .shareLink p {
+        margin-top: 0 !important;
+    }
+
+    .content_taxes,
+    .logo_page,
+    .content_page,
+    .content_trackIncome {
+        max-width: 640px;
+    }
+
+    .img_home .img_right:first-child {
+        max-width: 300px;
+        right    : 50px;
+    }
+
+    .content_right .img_right:first-child {
+        max-width: 400px;
+        top      : -202px;
+        right    : -30px;
+    }
+
+    .content_taxes {
+        padding: 150px 0;
+    }
+
+    .img_home .img_right:first-child img:first-child {
+        max-width: 300px;
+    }
+
+    .img_home .img_right:first-child img:nth-child(2) {
+        max-width: 60px;
+        left     : 15px;
+    }
+
+    .img_home .img_right:first-child img:last-child {
+        max-width: 250px;
+    }
+
+    .trackIncome_left {
+        max-width    : 300px;
+        border-radius: 47px;
+    }
+
+    .trackIncome_left img {
+        border-radius: 47px;
+    }
+
+    .taxes_left h1 {
+        font-size: 42px;
+    }
+
+    .trackIncome_right h1 {
+        font-size : 42px;
+        min-height: 101px
+    }
+
+    .trackIncome_right h1,
+    .trackIncome_right p {
+        max-width: 300px;
+    }
+
+    .taxes_right .img_right {
+        max-width: 350px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .header {
+        border-bottom: 0;
+    }
+
+    .content_page,
+    .content_taxes {
+        width  : 100% !important;
+        display: inline-block;
+    }
+
+    .logo_page {
+        max-width: 311px;
+        margin   : auto;
+        padding  : 0;
+    }
+
+    .img_logo img {
+        width     : 104.67px;
+        height    : 20px;
+        margin-top: 32px;
+    }
+
+    .page_other .logo_page .img_logo img {
+        width     : 104.67px;
+        height    : 20px;
+        margin-top: 32px;
+    }
+
+    .text_header {
+        display: none;
+    }
+
+    .content_page {
+        margin-top   : 0;
+        /* min-height: calc(100vh - 164px); */
+    }
+
+    .content_page .content_left,
+    .content_page .content_right,
+    .verifyCode,
+    .shareLink {
+        width     : 100% !important;
+        text-align: center;
+    }
+
+    /* .content_left .text_show_desktop {
+        display: none !important;
+    } */
+
+    /* .content_left .text_show_mobile {
+        display: block !important;
+    } */
+
+    .content_left {
+        margin-bottom: 0;
+    }
+
+    .content_page h1 {
+        text-align   : left;
+        font-size    : 32px;
+        line-height  : 120%;
+        max-width    : 311px;
+        margin-top   : 48px;
+        margin-bottom: 24px;
+        min-height   : 76px;
+    }
+
+    .home_page .content_page h1 {
+        font-size    : 35px;
+        line-height  : 120%;
+        margin-top   : 64px;
+        max-width    : 311px;
+        min-height   : 77px;
+        text-align   : left;
+        padding      : 0;
+        margin-bottom: 16px;
+    }
+
+    .content_left p {
+        font-weight: normal;
+        font-size  : 18px;
+        line-height: 170%;
+        max-width  : 311px;
+        text-align : left;
+        margin     : 0 auto 40px auto;
+        min-height : 92px;
+    }
+
+    .home_page .content_page p {
+        min-height   : 32px;
+        text-align   : left;
+        margin-bottom: 24px;
+    }
+
+    .img_home .img_right:first-child img:first-child {
+        max-width: 164.53px;
+        left     : -28px;
+    }
+
+    .img_home .img_right:first-child img:nth-child(2) {
+        display: none;
+    }
+
+    .img_home .img_right:first-child img:last-child {
+        max-width: 140.51px;
+        right    : -4px;
+    }
+
+    .content_page .actions input,
+    .content_page .actions .url_share,
+    .content_page .actions .txt_link {
+        margin-right: 0;
+    }
+
+    .content_page input,
+    .content_page button {
+        width: 311px;
+    }
+
+    .content_page .actions {
+        max-width: 100%;
+    }
+
+    .shareLink .txt_link {
+        display: none !important;
+    }
+
+    .shareLink .url_share {
+        display  : block !important;
+        max-width: 311px;
+        color    : #000000 !important;
+    }
+
+    .shareLink .url_share {
+        word-wrap    : break-word;
+        padding      : 19px 16px 16px;
+        overflow     : unset;
+        text-overflow: unset;
+    }
+
+    .content_page button {
+        margin: auto;
+        width : 311px;
+        height: 48px;
+    }
+
+    .content_page .already {
+        font-size      : 11px;
+        line-height    : 16px;
+        margin         : 23px auto 169px auto;
+        justify-content: center;
+    }
+
+    .taxes {
+        width        : 100%;
+        margin       : 0;
+        border-radius: 0;
+    }
+
+    .content_taxes {
+        padding: 64px 0 67.38px 0;
+    }
+
+    .taxes_left {
+        max-width: 311px;
+        margin   : auto;
+    }
+
+    .taxes_left h1 {
+        font-size    : 35px;
+        line-height  : 120%;
+        max-width    : 311px;
+        min-height   : 126px;
+        margin-bottom: 56px;
+        text-align   : left;
+    }
+
+    .taxes_left p {
+        font-size    : 18px;
+        min-height   : 62px;
+        line-height  : 170%;
+        margin-bottom: 47.56px;
+        color        : rgba(235, 235, 245, 0.6);
+        text-align   : left;
+    }
+
+    .taxes_right .img_right {
+        max-width: 311px;
+        margin   : auto;
+    }
+
+    /* .content_right .img_right:last-child,
+    .img_home .img_right:last-child {
+        display: block;
+    }
+
+    .content_right .img_right:last-child,
+    .img_home .img_right:last-child {
+        width          : 100%;
+        border-radius  : 0;
+        background     : url('../images/waitlist/imgMobileUpdate.png') center center no-repeat;
+        box-shadow     : none;
+        height         : 102px;
+        background-size: contain;
+    } */
+
+    .content_page .content_right {
+        position       : relative;
+        justify-content: center;
+        margin-bottom  : 0;
+    }
+
+    .content_right .img_right:first-child {
+        display: none !important;
+    }
+
+    .content_trackIncome {
+        flex-direction: column-reverse;
+        overflow      : hidden;
+        padding       : 64px 0 0;
+    }
+
+    .trackIncome_left {
+        margin-bottom: -107px;
+        max-width    : 198.14px;
+        border-radius: 30px;
+        box-shadow   : 28px 60px 90px rgba(0, 0, 0, 0.1);
+    }
+
+    .trackIncome_left img {
+        box-shadow   : inset 0px -2.29164px 8.02074px rgba(0, 0, 0, 0.1);
+        border-radius: 30px;
+    }
+
+    .trackIncome_right h1 {
+        font-size : 35px;
+        min-height: 84px;
+        margin    : 0 auto 16px auto;
+        max-width : 311px;
+    }
+
+    .trackIncome_right p {
+        font-size  : 18px;
+        line-height: 26px;
+        min-height : 53px;
+        margin     : 0 auto 40px auto;
+        max-width  : 311px;
+    }
+
+    /* .turtle_run {
+        height   : 30px;
+        animation: 8s linear 0s infinite turtle;
+    }
+
+    .turtle_run img {
+        width : 60px;
+        height: 30px;
+    }
+
+    .turtle_run .turtle2 {
+        transform: translateX(calc(-60px - 100vw));
+    }
+
+    @keyframes turtle {
+        0% {
+            margin-left: 0;
+        }
+
+        100% {
+            margin-left: calc(100vw + 60px);
+        }
+    } */
+
+    .usedSignUp p {
+        padding-right: 50px !important;
+    }
+
+    .verifyCode {
+        margin-bottom: 0;
+        min-height   : calc(100vh - 272px);
+    }
+
+    .verifyCode h1 {
+        font-weight: bold;
+        font-size  : 35px;
+        line-height: 120%;
+        max-width  : 378px;
+        text-align : left;
+        margin     : 64px auto 16px auto;
+        min-height : 84px !important;
+        padding    : 0 !important;
+    }
+
+    .verifyCode .subtitle {
+        max-width    : 378px;
+        margin       : auto;
+        font-size    : 18px;
+        line-height  : 26px;
+        text-align   : left;
+        margin-bottom: 31.51px;
+        min-height   : 27px;
+    }
+
+    .verifyCode .actions input,
+    .shareLink input {
+        margin-bottom: 16px;
+    }
+
+    button.submit_desktop {
+        visibility: hidden !important;
+    }
+
+    button.submit_mobile {
+        visibility: visible !important;
+    }
+
+    .shareLink {
+        max-width: 378px;
+        margin   : 56px auto 177px auto !important;
+    }
+
+
+    .shareLink h1 {
+        font-weight  : bold;
+        font-size    : 40px;
+        line-height  : 120%;
+        text-align   : left;
+        min-height   : 48px;
+        margin-bottom: 24px;
+    }
+
+    .shareLink p span {
+        font-weight: bold;
+    }
+
+    .shareLink p {
+        font-size    : 18px;
+        line-height  : 26px;
+        text-align   : left;
+        margin-bottom: 29px;
+        min-height   : 53px;
+        max-width    : 378px;
+    }
+
+    /* .rabbits {
+        display: block;
+    } */
+
+    .show_text_shareLink {
+        display: block !important;
+    }
+
+    .show_text_shareLink .spinner {
+        margin-top: 4px;
+    }
+
+
+    .hidden_mobile,
+    .hidden_text_shareLink {
+        display: none !important;
+    }
+
+    .show_rabbits {
+        display: block !important;
+    }
+
+}
+
+@media only screen and (max-width: 420px) {
+
+    .logo_page,
+    .content_img,
+    .content_left p {
+        max-width: 311px;
+    }
+
+    .content_page h1 {
+        min-height   : 116px;
+        max-width    : 311px;
+        padding-right: 67px;
+    }
+
+    .home_page .content_page p {
+        font-size  : 18px;
+        line-height: 170%;
+        min-height : 62px;
+    }
+
+    .text_show_mobile {
+        display: block !important;
+    }
+
+    .down_the_line {
+        display: none;
+    }
+
+    .content_page input,
+    .content_page button {
+        width: 311px;
+    }
+
+    .content_page button {
+        font-size  : 16px;
+        line-height: 23px;
+    }
+
+    .shareLink .url_share {
+        max-width : 311px;
+        text-align: left;
+    }
+
+
+    .taxes_left,
+    .taxes_right .img_right {
+        max-width: 311px;
+    }
+
+    .taxes_left .for-us {
+        margin-bottom: 24.49px;
+    }
+
+    .usedSignUp {
+        padding-right: 0px;
+    }
+
+    .verifyCode h1,
+    .verifyCode .subtitle {
+        max-width: 311px;
+
+    }
+
+    .verifyCode .subtitle {
+        color        : #000;
+        margin-bottom: 78px;
+    }
+
+    .usedSignUp .subtitle {
+        margin-bottom: 66px;
+    }
+
+    .shareLink h1 {
+        max-width    : 311px;
+        margin       : auto;
+        margin-bottom: 16px;
+        min-height   : 42px !important;
+        padding      : 0 !important;
+        font-size    : 35px;
+    }
+
+    .shareLink p {
+        max-width    : 311px;
+        margin       : auto;
+        margin-bottom: 34px;
+    }
+}

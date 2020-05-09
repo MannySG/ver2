@@ -1,0 +1,39 @@
+<!----------Header----------->
+<header>
+  <a [routerLink]="['/setup-guide']">
+      <img src="assets/images/setup-guide/logo.png" alt="">
+  </a> 
+  <h5>Account Setup</h5>
+  <a href="" class="save">Save and Exit</a>
+</header>
+
+<!--------Content-------->
+<div class="step-line">
+  <div class="step-line-2"></div>
+</div>
+<div id="manual">
+    <div class="title">
+        <h4>How much would you like to withhold?</h4>
+        <button class="icon-left" (click)="Integrate()">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <p>Choose between an exact amount or a percentage of your income to withhold.</p>
+    </div>
+    <div class="group-input">
+        <button class="amount" (click)="clickEvent()"  
+        [ngClass]="status ? 'active' : 'none'" ><span>Amount</span></button>
+        <button class="percentage" (click)="clickChange()"
+        [ngClass]="display ? 'none' : 'active'"><span>Percentage</span></button>
+        <br>
+        <input type="text" placeholder="$">
+    </div>
+    <div class="enter-continue">
+        <div class="text-left">
+            <p class="continue">Continue</p>
+            <p class="enter">Press Enter</p>
+        </div>
+        <button class="icon-right" (click)="LogIn()">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<header>
+  <div class="button-toggle-menu">
+    <a (click)="NextEmail()" *ngIf="!showLoading">
+      <img [src]="imgToggle">
+    </a>
+    <div class="backSetting" *ngIf="showLoading" (click)="BackDashboard()">
+      <a><img [src]="imgBack"></a>
+      <span>Dashboard</span>
+    </div>
+    </div>
+  <div class="logoDashboard">
+    <a href="#"><img [src]="imgLogo"></a>
+  </div>
+  <div class="notification">
+    <img [src]="imgNotifi">
+  </div>
+  <div class="logout" (click)="logOut()">
+    <button type="submit">Log out</button>
+  </div>
+</header>

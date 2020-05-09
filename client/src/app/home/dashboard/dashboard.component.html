@@ -1,0 +1,107 @@
+<div class="dashboard">
+  <div id="better-top">
+      <div class="row" style="margin: 0;">
+          <div class="bt-left">
+              <h2>
+                  Because being independent shouldn’t mean you’re alone.
+              </h2>
+              <p>{{content}}</p>
+              <div class="btn-acc">
+                  <button class="col-6" (click)="CreateAccount()"><span>Create an account</span></button>
+                  <a href="#" class="col-6">Learn more</a>
+              </div>
+          </div>
+          <div class="bt-right">
+              <img [src]="imgR" class="img-fluid">
+          </div>
+      </div>
+  </div>
+
+  <div id="start-Sh">
+      <div class="content-start">
+          <div class="img-L">
+              <img [src]="imgL">
+          </div>
+          <div class="text-content-right">
+              <h2>Safehold Feature — Withholding for Solopreneurs</h2>
+              <p>{{contentStart}}</p>
+              <span class="get-started">
+                  <a href="#">Get started with safehold
+                      <img [src]="imgPolygon">
+                  </a>
+              </span>
+          </div>
+      </div>
+  </div>
+
+  <div id="benefits">
+      <div class="row" style="margin: 0;">
+          <h2 class="text-center">Benefits of Using Safehold</h2>
+          <div class="icon-benefits">
+              <div class="item-benefits">
+                  <div class="item-child" style="text-align: center;">
+                      <img [src]="imgEase" class="img-fuild">
+                      <div class="text-top"><span>Ease of Use</span></div>
+                      <div class="text-bot">Fully automated</div>
+                  </div>
+              </div>
+              <div class="item-benefits">
+                  <div class="item-child" style="text-align: center;">
+                      <img [src]="imgInfo" class="img-fuild">
+                      <div class="text-top"><span>Information</span></div>
+                      <div class="text-bot">Always know what you owe</div>
+                  </div>
+              </div>
+              <div class="item-benefits">
+                  <div class="item-child" style="text-align: center;">
+                      <img [src]="imgControl" class="img-fuild">
+                      <div class="text-top"><span>Control</span></div>
+                      <div class="text-bot">Choose your end of year tax result</div>
+                  </div>
+              </div>
+              <div class="item-benefits">
+                  <div class="item-child" style="text-align: center;">
+                      <img [src]="imgCost" class="img-fuild">
+                      <div class="text-top"><span>Cost Savings</span></div>
+                      <div class="text-bot">Reduce penalties and prof fees</div>
+                  </div>
+              </div>
+              <div class="item-benefits">
+                  <div class="item-child" style="text-align: center;">
+                      <img [src]="imgTime" class="img-fuild">
+                      <div class="text-top"><span>Time Savings</span></div>
+                      <div class="text-bot">We do the work</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div id="learnMore">
+      <div class="learn-left">
+          <h2>Simple and Flexible</h2>
+          <p>{{contentLeft}}</p>
+          <span class="learn-link">
+              <a href="#">Learn more about safehold
+                  <img [src]="imgPolygon">
+              </a>
+          </span>
+      </div>
+      <div class="learn-right">
+          <img [src]="imgLM" class="img-fluid">
+      </div>
+  </div>
+
+  <div id="better-bot">
+      <div class="better-left">
+          <h2>Ready to get started?</h2>
+          <p>{{contentBotL}}</p>
+          <button type="button" (click)="CreateAccount()"><span>Create an account</span></button>
+      </div>
+      <div class="better-right">
+          <h2>Have a question?</h2>
+          <p>{{contentBotR}}</p>
+          <button type="button"><span>Get in touch</span></button>
+      </div>
+  </div>
+</div>

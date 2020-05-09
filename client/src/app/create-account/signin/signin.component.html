@@ -1,0 +1,61 @@
+<div class="main-content">
+  <div class="app-body">
+    <main class="main d-flex align-items-center">
+      <div class="content-main" style="margin: auto">
+        <div style="width: 904px !important;">
+          <div class="card-group">
+            <div class="content-signin-left" style="width:50%">
+              <div class="img-login" *ngIf="showloading">
+                <img [src]="imgSingup" class="img-fluid">
+                <div class="text-content text-center">
+                  <h2>Welcome to Better</h2>
+                  <span>Taxes made simple</span>
+                </div>
+              </div>
+              <div class="card p-4 content">
+                <div class="card-body" style="margin: auto;">
+                  <form>
+                    <h1>Sign in</h1>
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Email address" autocomplete="off" required #email>
+                    </div>
+                    <div class="input-group">
+                      <input [type]="!showPass ? 'password' : 'text'" class="form-control" [(ngModel)]="textpass" name="pass"
+                        placeholder="Password" autocomplete="off" id="password" required (keyup.enter)="loginBetter(email.value,password.value)" #password>
+                      <div class="img-Eye" (click)="TogglePassword()" *ngIf="textpass.length == 0 ? showEye : !showEye">
+                        <a><img [src]="imgEye" *ngIf="showPass"></a>
+                        <a><img [src]="imgHideEye" *ngIf="!showPass" style="width: 24px; height: 24px;"></a>
+                      </div>
+                    </div>
+                    <button type="button" (click)="loginBetter(email.value,password.value)">Sign into your account</button>
+                    <div class="text-bot">
+                      <span>Already a member? <a style="cursor: pointer" [routerLink]="['/signup']">Sign up.</a></span>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="content-signin-right" style="width:50%">
+              <div class="img-login" *ngIf="!showloading">
+                <img [src]="imgLogin" class="img-fluid">
+                <div class="text-content text-center">
+                  <h2>Welcome to Better</h2>
+                  <span>Taxes made simple</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<div *ngIf="email.errors?.required" class="error">
+  Email is required
+</div>
+
+<div class="error-loading" *ngIf="showErr">
+  <div class="text-err">{{error}}</div>
+</div>
+

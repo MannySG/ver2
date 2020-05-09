@@ -1,0 +1,99 @@
+.footer{
+    background: #001527;
+    padding-bottom: 130px;
+    padding-top: 133px;
+    font-family: Lato;
+    height: 451px;
+    width: 1440px;
+    padding-left: 95px;
+    padding-right: 91px;
+}
+#footer-Left .content{
+    line-height: 34px;
+    font-size: 22px;
+    color: #FFF;
+    opacity: 0.6;   
+    margin-top: 24px;
+    margin-bottom: 39px;
+    width: 335px;
+    height: 69px;
+    font-style: normal;
+    font-weight: normal;
+}
+#footer-Left .social{
+    width: 336px;
+    height: 27px;
+}
+#footer-Left .social a{
+    font-size: 22px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    color: #FFFFFF;
+    margin: 0 5px;
+}
+#footer-Left .social a:first-child{
+    margin-left: 0;
+}
+#footer-Left .social span{
+    color: #FFF;
+}
+#navgation h3{
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 22px;
+    color: #FFF;
+    width: 108px;
+    height: 27px;
+}
+.menu{
+    margin-top: 25px;
+    padding-left: 0;
+}
+.menu li{
+    margin-bottom: 12px;
+    list-style: none;
+}
+#navgation .menu li:first-child a{
+    width: 82px;
+}
+#navgation .menu li:nth-child(2) a{
+    width: 111px;
+}
+#navgation .menu li:nth-child(3) a{
+    width: 77px;
+}
+#navgation .menu li:nth-child(4) a{
+    width: 71px;
+}
+.menu li a{
+    font-size: 20px;
+    color: #FFF;
+    opacity: 0.6;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    height: 24px;
+}
+#imformation h3{
+    width: 119px;
+    height: 27px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 22px;
+    color: #FFFFFF
+}
+#imformation .menu li:first-child a{
+    width: 42px
+}
+#imformation .menu li:nth-child(2) a{
+    width: 171px;
+}
+#imformation .menu li:nth-child(3) a{
+    width: 66px;
+}
+#imformation .menu li:nth-child(4) a{
+    width: 136px;
+}

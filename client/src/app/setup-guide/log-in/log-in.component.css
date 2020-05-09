@@ -1,0 +1,145 @@
+/*========Header==========*/
+header{
+    display: flex;
+}
+header img{
+    margin: 32px 0 29px 44px;
+}
+header h5{
+    width: 141px;
+    height: 35px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 34px;
+    font-size: 22px;
+    text-align: center;
+    color: #001527; 
+    margin: 33px 0 22px 578px;
+    white-space: nowrap;
+}
+header a.save{
+    margin: 36px 55px 34px 490px;
+    width: 104px;
+    height: 22px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 18px;
+    text-align: right;
+    color: #757575;
+    white-space: nowrap;
+}
+
+/*==========Content========*/
+.step-line {
+    height: 5px;
+    background: #E0E0E0;
+    position: relative;
+    width: 1440px;
+}
+.step-line-2{
+    height: 5px;
+    position: absolute;
+    -webkit-animation-name: line;  
+    -webkit-animation-duration: 5s;   
+    -webkit-animation-fill-mode: forwards; 
+    animation-name: line;
+    animation-duration: 5s;  
+    animation-fill-mode: forwards;
+    background-color: orange;
+}
+@keyframes line {
+    from {width: 1236px;}
+    to {width: 1260px; }
+}
+#log-in{
+    background-color: #C0343D;
+    width: 1440px;
+    height: 804px;
+}
+#log-in .group-input{
+    width: 375px;
+    margin: 0 579px;
+}
+#log-in .group-input h4{
+    padding-top: 211px;
+    text-transform: uppercase;
+    color: #F8D447;
+    font-size: 41px;
+    font-family: Clarendon ;
+    width: 282px ;
+    font-weight: bold;
+    text-align: center;
+}
+#log-in .group-input input{
+    width: 282px;
+    height: 56px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 19px 32px;
+    border: none;
+}
+#log-in .group-input input:focus{
+    border: 2px solid #FF9100;
+    outline: none;
+}
+#log-in .group-input i.fa-lock{
+    position: absolute;
+    left: 833px;
+    top: 441px;
+    color: #AAAAAA;
+}
+#log-in .group-input  i.fa-exclamation-circle {
+    position: absolute;
+    color: #aaaaaa;
+    top: 508px;
+    left: 835px;
+    font-size: 18px;
+}
+#log-in button.icon-left {
+    top: 426px;
+    left: 132px;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    color: #C0343D;
+    cursor: pointer;
+}
+#log-in button.icon-left:focus {
+    outline: none;
+}
+#log-in button.icon-left i{
+    width: 8px;
+    height: 14px;
+}
+#log-in button.submit{
+    background: #FFFFFF;
+    border-radius: 4px;
+    color: #C0343D;
+    width: 282px;
+    height: 56px;
+    margin: 10px 579px 283px 579px;
+    border: none;
+    cursor: pointer;
+}
+#log-in button.submit:focus{
+    outline: none;
+}
+#log-in button.submit span{
+    width: 64px;
+    height: 24px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 20px;
+    text-align: center;
+    color: #C0343D;
+
+}

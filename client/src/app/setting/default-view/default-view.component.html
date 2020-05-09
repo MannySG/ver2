@@ -1,0 +1,104 @@
+<main>
+    <div style="background: #F2F2F2; height: 2px; width: 1440px;"></div>
+    <div class="item-main">
+        <div class="content-left">
+            <div class="available-income">
+                <h2>Availbale Income</h2>
+                <div class="chart-income" style="display: flex">
+                    <div class="img-income">
+                        <img [src]="imgChart">
+                    </div>
+                    <div class="item-detail">
+                        <img [src]="imgDola">
+                        <span>5,623.89</span>
+                    </div>
+                </div>
+            </div>
+            <div class="keep-doing">
+                <div class="text-keep">
+                    {{contentKeep}}
+                </div>
+                <div class="estimate-refund">
+                    <p>Estimate Refund</p>
+                    <span>$936.00</span>
+                </div>
+            </div>
+            <div class="current-pay">
+                <div class="current-pay-left">
+                    <h2>Current Pay Period</h2>
+                    <div class="current-date">
+                        10/1/18 - 10/15/18
+                    </div>
+                    <div style="background: #EBEBEB; height: 1px;"></div>
+                    <div class="income-track">
+                        <span>Income Track</span>
+                        <span>$1285.62</span>
+                    </div>
+                    <div style="background: #EBEBEB; height: 1px;"></div>
+                    <div class="estimate-safehold">
+                        <span>Estimate Safehold Transfer</span>
+                        <span>$239.41</span>
+                    </div>
+                </div>
+                <div class="current-pay-right">
+                    <div class="mask">
+                        <img [src]="imgMask" class="img-fluid">
+                        <div class="text-mask">
+                            <a href="#"><span>Refer to earn</span></a>
+                            <img [src]="imgLink">
+                        </div>
+                    </div>
+                    <div class="content">{{textRight}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="safehold-active">
+                <span>Safehold Activity</span>
+                <img [src]="imgMore">
+            </div>
+            <ul>
+                <li>
+                    <span>Oct15,2018</span>
+                    <span>+$128.33</span>
+                </li>
+                <li>
+                    <span>Oct7,2018</span>
+                    <span style="color: #F65555;">-$28.31</span>
+                </li>
+                <li>
+                    <span>Oct1,2018</span>
+                    <span>+$43.00</span>
+                </li>
+                <li>
+                    <span>Step23,2018</span>
+                    <span>+$61.50</span>
+                </li>
+                <li>
+                    <span>Step17,2018</span>
+                    <span>+$110.03</span>
+                </li>
+                <li>
+                    <span>Step9,2018</span>
+                    <span style="color: #F65555;">-$12.49</span>
+                </li>
+                <li>
+                    <span>Step3,2018</span>
+                    <span>+$18.90</span>
+                </li>
+                <li>
+                    <span>Aug26,2018</span>
+                    <span>+$12.00</span>
+                </li>
+                <li>
+                    <span>Aug20,2018</span>
+                    <span>+$97.60</span>
+                </li>
+            </ul>
+
+            <div class="see-more text-center">
+                <a href="#"><span>See more</span></a>
+            </div>
+        </div>
+    </div>
+</main>

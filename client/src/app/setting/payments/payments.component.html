@@ -1,0 +1,88 @@
+<div style="background: #F2F2F2; height: 2px; width: 1440px;"></div>
+<div class="content-profile">
+    <div class="item-menu">
+        <nav class="nav flex-column">
+            <a class="nav-link" [routerLink]="['/dashboard/profile']"><span>Profile</span></a>
+            <a class="nav-link" [routerLink]="['/dashboard/email']"><span>Email</span></a>
+            <a class="nav-link" [routerLink]="['/dashboard/password']"><span>Password</span></a>
+            <a class="nav-link" [routerLink]="['/dashboard/bank-account']"><span>Bank Account</span></a>
+            <a class="nav-link" [routerLink]="['/dashboard/tax-information']"><span>Tax Information</span></a>
+            <a class="nav-link" [routerLink]="['/dashboard/notifications']"><span>Notifications</span></a>
+            <a class="nav-link" [routerLink]="['/dashboard/help-support']"><span>Help & Support</span></a>
+            <a class="nav-link" [routerLink]="['/dashboard/contact-us']"><span>Contact Us</span></a>
+            <a class="nav-link"><span>Report an Issue</span></a>
+            <a class="nav-link active"><span>Reports of Payments</span></a>
+            <a class="nav-link" [routerLink]="['/dashboard/privacy-policy']"><span>Privacy Policy</span></a>
+            <a class="nav-link "[routerLink]="['/dashboard/terms-conditions']" ><span>Terms & Conditions</span></a>
+            <a class="nav-link" [routerLink]="['/dashboard/delete-account']"><span>Delete Your Account</span></a>
+        </nav>
+    </div>
+    <div class="item-content-right">
+        <div class="title">
+            <h2>Reports of Paymets Made</h2>
+            <p>Current Pay Period <i (click)="Display()" [ngClass] = "status ? 'fas fa-chevron-down' : 'fas fa-chevron-up'"></i></p>
+            <div class="current-pay-hidden" [hidden]="forgot">
+                <h5>Current Pay Period</h5>
+                <ul>
+                    <li>Last 7 days</li>
+                    <li>Last month</li>
+                    <li>Last 6 months</li>
+                    <li>Last year</li>    
+                </ul>
+            </div>
+        </div>
+
+        <div class="payments-list">
+            <ul>
+                <li>
+                    <span class="date">Oct 15, 2018</span>
+                    <br>
+                    <span class="orange">Transfer</span>
+                    <span class="orange">+ $128.33 </span>
+                </li>
+                <li>
+                    <span class="date">Oct 7, 2018</span>
+                    <br>
+                    <span class="black">Withdrawl</span>
+                    <span class="black">- $28.31 </span>                    
+                </li>
+                <li>
+                    <span class="date">Oct 1, 2018</span>
+                    <br>
+                    <span class="orange">Transfer</span>
+                    <span class="orange">+ $43.00 </span>
+                </li>
+                <li>
+                    <span class="date">Sep 23, 2018</span>
+                    <br>
+                    <span class="orange">Transfer</span>
+                    <span class="orange">+ $78.60</span>
+                </li>
+                <li>
+                    <span class="date">Sep 17, 2018</span>
+                    <br>
+                    <span class="orange">Transfer</span>
+                    <span class="orange">+ $41.50</span>
+                </li>
+                <li>
+                    <span class="date">Sep 9, 2018</span>
+                    <br>
+                    <span class="black">Withdrawl</span>
+                    <span class="black">- $12.60</span>
+                </li>
+                <li>
+                    <span class="date">Sep 3, 2018</span>
+                    <br>
+                    <span class="orange">Transfer</span>
+                    <span class="orange">+ $138.17</span>
+                </li>
+                <li>
+                    <span class="date">Aug 26, 2018</span>
+                    <br>
+                    <span class="orange">Transfer</span>
+                    <span class="orange">+ $53.10</span>
+                </li>
+            </ul>
+            
+        </div>
+        

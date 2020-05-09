@@ -1,0 +1,120 @@
+header{
+    display: flex;
+}
+header img{
+    margin: 32px 0 29px 44px;
+}
+header h5{
+    width: 141px;
+    height: 35px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 34px;
+    font-size: 22px;
+    text-align: center;
+    color: #001527; 
+    margin: 33px 0 22px 578px;
+    white-space: nowrap;
+}
+header a.save{
+    margin: 36px 55px 34px 490px;
+    width: 104px;
+    height: 22px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 18px;
+    text-align: right;
+    color: #757575;
+    white-space: nowrap;
+}
+.step-line{
+    height: 5px;
+    background:#E0E0E0;
+    width: 1440px;
+}
+#location{
+    font-family: Lato;
+    width: 1440px;
+}
+#location h4{
+    width: 124px;
+    height: 39px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 32px;
+    color: #001527;
+    margin: auto;
+    margin-top: 186px;
+    margin-bottom: 29px;
+}
+#location p.title{
+    width: 432px;
+    height: 74px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 34px;
+    font-size: 22px;
+    text-align: center;
+    color: #757575;
+    margin: 0 504px 21px 504px;
+}
+#location input{
+    border: 2px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 18px 32.5px 20px 32.5px;
+    width: 430px;
+    margin: 0 505px 63px 505px;
+    height: 62px;
+}
+#location input:focus{
+    border: 2px solid #FF9100;
+    outline: none;
+}
+#location .enter-continue{
+    display: flex;
+    margin: 0 637px 283px 642px;
+}
+#location .enter-continue p.continue{
+    width: 75px;
+    height: 22px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 0;
+}
+#location .enter-continue p.enter{
+    width: 92px;
+    height: 22px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 18px;
+    color: #BDBDBD;
+}
+#location .enter-continue button.icon-right{
+    width: 48px;
+    height: 48px;
+    background: #FF9100;
+    border-radius: 50%;
+    border: 1px solid #FF9100;
+    margin-left: 21px;
+    cursor: pointer;
+    outline: 0;
+}
+#location .enter-continue button.icon-right{
+    outline: none;
+}
+#location .enter-continue button.icon-right i{
+    width: 8px;
+    height: 14px;
+    color: #fff;
+}
